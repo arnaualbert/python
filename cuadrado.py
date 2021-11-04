@@ -1,7 +1,13 @@
 from turtle import *
 setup(500,500,0,0)
-def get_upper_left_X(x:float,
+def get_upper_left_x(x:float,
                     y:float,
-                    lenght:float):
+                    lenght:float) -> float:
     
-    pass
+    
+    midlenght: float = lenght/2
+
+    upper_left_x = x - midlenght
+    upper_left_y = y + midlenght
+    result = upper_left_x
+    return result
