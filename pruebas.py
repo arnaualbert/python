@@ -23,3 +23,4 @@ pprint.pp(dir(s1))
 s2 = s1.upper()
 
 #Funciones basicas : type(), id(), dir()
+#cuando se importa una libreria no se tiene que poner from --- import * se tiene que hacer import ---- as el nombre que tu quieras
