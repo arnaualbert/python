@@ -1,3 +1,5 @@
+import pprint
+
 s1: str = "esto es un string. UN string es un texto"
 s2: str = 'esto es un string. UN string es un texto'
 
@@ -16,8 +18,8 @@ s8: str = """comillas triples"""
 s1: str = "hello"
 s1[1] = "o"
 s1
-dir(s1)
+pprint.pp(dir(s1))
 
 s2 = s1.upper()
 
-#Funciones basicas : type(), id(), dir(),
+#Funciones basicas : type(), id(), dir()
