@@ -22,5 +22,13 @@ pprint.pp(dir(s1))
 
 s2 = s1.upper()
 
+#substring
+print(s1)
+print(s1[:])
+print(s1[0:])
+print(s1[0:len(s1)])
+
+len(s1)#devuelve la longitud
+
 #Funciones basicas : type(), id(), dir()
 #cuando se importa una libreria no se tiene que poner from --- import * se tiene que hacer import ---- as el nombre que tu quieras
