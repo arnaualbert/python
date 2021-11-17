@@ -18,4 +18,6 @@ s1[1] = "o"
 s1
 dir(s1)
 
-s1.upper()
+s2 = s1.upper()
+
+#Funciones basicas : type(), id(), dir(),
