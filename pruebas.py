@@ -26,9 +26,47 @@ s2 = s1.upper()
 print(s1)
 print(s1[:])
 print(s1[0:])
+print(s1[0:5])
 print(s1[0:len(s1)])
 
-len(s1)#devuelve la longitud
+len(s1) #devuelve la longitud
 
 #Funciones basicas : type(), id(), dir()
 #cuando se importa una libreria no se tiene que poner from --- import * se tiene que hacer import ---- as el nombre que tu quieras
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# string normal
+normal_string: str = "hello\nworld"
+print(normal_string)
+
+# un raw string te pone lo que pones literalmente
+raw_string: str = r"hello\nworld"
+raw_string2: str = "hello\\nworld"
+print(raw_string)
+print(raw_string2)
+
+# forma mas facil de mezclar strings con variables
+name: str = "Arnau"
+format_string: str = f"hello {name}"
+print(format_string)
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+
+#operaciones con strings
+
+# suma de strings
+greeting: str = "Hello"
+name: str = "World"
+space: str = " "
+bang: str = "!"
+concat: str = greeting + " " + name + bang
+concat2: str = greeting + space + name + bang
+
+print(f"{greeting} {name}")
+print(greeting + name)
+print(greeting, name)
+print(concat)
+
+# multplicacion string (repeticion)
+print("hello " * 3)
