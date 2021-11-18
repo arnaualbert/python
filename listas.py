@@ -38,6 +38,28 @@ first_row = l5[0]
 second_row = l5[1]
 print(f"{first_row}\n{second_row}")
 
+# search elements
+
+l6:list[str] = ["a", "b", "c","d","e","f"]
+print(l6.index("d")) #da la posicion
+
+# count
+
+l6:list[str] = ["a", "b", "b", "c","c","c","d","e","f"]
+print(l6.count("c")) # cuenta elementos
+
+# sorted
+# sorted te devuelve una nueva lista 
+l6: list[int] = [4,2,1,3,0]
+l6_sorted: list[int] = sorted(l6)
+print(l6_sorted)
+
+# reversed
+# devuelve una lista girada
+l6: list[int] = [1,2,3,4]
+l6_reversed: list[int] = list(reversed(l6))
+print(l6_reversed)
+
 #----------------------------------------------------------------------------------------------------------------------------------------
 
 # en python todoas las funciones deveulven algo 
@@ -113,14 +135,33 @@ l6.insert(0,10) #inserta el num 10 en la psoicion 0
 l6.insert(len(l6),10) # inserta 10 al final
 print(l6)
 
+# remove
+
+l6.remove("b") #remove the element
+print(l6)
+
+
+#pop
+#removes by index
+l6.pop(1)
+print(l6)
+
+# clear
+#lo borra todo pero deja la funcion
+l6.clear()
 
 
 
+# "del" keyword
 
-
-
-
-
+# del no es una funcione es una palabra clave
+# no hay q poner parentesis depsues de del
+# del lo borra todo
+l6:list[str] = ["a","b","c","d"]
+del l6[3]
+del l6[:] # borra todos los elementos de la lista
+print(l6)
+del l6 # borra la lista
 
 
 
