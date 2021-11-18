@@ -1,4 +1,5 @@
 import pprint
+import random
 
 # Lists
 
@@ -36,8 +37,40 @@ l5:list[list[int]] = [[1,2],[3,4]]
 first_row = l5[0]
 second_row = l5[1]
 print(f"{first_row}\n{second_row}")
-#⨪----------------------------------------------------------------------------------------------------------------------
 
+#----------------------------------------------------------------------------------------------------------------------------------------
+
+# en python todoas las funciones deveulven algo 
+# si no return keyboard they return NONE
+
+#Funcion pura
+#1 solo lee parametros de entrada 
+#2 solo escribe en sus parametros de salida 
+#3 para los mismos parametros de entrada siempre devuelve los mismos parametros de salida
+
+# ejemplo 1
+a = 1
+def do_something_v1():
+    print(a)
+
+do_something_v1()
+
+def do_something_v2():
+    b = input()
+    print(b)
+
+do_something_v2
+
+# ej 2
+l6: list[int] = [1, 2, 3]
+l6.append(4) # return none
+
+#ej3
+def do_something_v3():
+    return random.randint(1,10)
+do_something_v3()
+
+#-------------------------------------------------------------------------------------------------------------------------------------
 # assignment List are mutable
 
 l3[0] = "z" #cambia la letra en posicion 0 por z 
@@ -53,7 +86,46 @@ l3 = [] # borra todo
 l3[:] = [] #borra todo
 print(l3)
 
+# list methods
+l3_methods: list[str] = dir(l3)
+pprint.pp(l3_methods)
 
+# append
+
+l3: list[int] = [0, 1, 2 , 3, 4, 5]
+l3.append(6)
+print(l3)
+
+# extend 
+
+l6: list[int] = [1,2,3]
+l7: list[int] = [4,5,6]
+l8: list[int] = l6 + l7 # pure
+print(l8)
+
+
+l6.extend(l7) # mejor no hacer (extiene la lista 6 con la lista 7)
+print(l6) # mejor la suma line 192 q la linea 106
+
+# insert (no sobreescribe)
+
+l6.insert(0,10) #inserta el num 10 en la psoicion 0
+l6.insert(len(l6),10) # inserta 10 al final
+print(l6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
 
 # prints
 print(l2_len)
