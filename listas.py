@@ -20,6 +20,7 @@ print(l2[len(l2)-1]) #Lucy
 l2[2][0] # "Lucy"[0]
 
 # sublistas
+# slice
 
 l3: list[str] = ["a", "b", "c", "d", "e", "f"]
 print(l3[0:4]) # a,b,c,d
