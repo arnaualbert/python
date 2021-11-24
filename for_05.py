@@ -20,4 +20,4 @@ name3: str = input()
 names.append(name3)
 
 for name in names:
-    print(name.index(name))
+    print(names.index(name))
