@@ -24,7 +24,7 @@ metodo = funcion
 
 sorted es una funcion pura
 
-condicionales y bucles
+condicionales y bucles (lops)
 
 1 for = sirve para hacer recorridos de colecciones (listas, str, tuplas...)
 
