@@ -1,6 +1,7 @@
 import pprint
 import random
 import copy
+
 # Lists
 
 # list literals
@@ -175,8 +176,8 @@ del l6 # borra la lista
 
 l6: list[int] = [1,2,3]
 l7: list[int] = copy.copy(l6)
-print(l6)
-print(l7)
+print(id(l6))
+print(id(l7))
 
 
 
