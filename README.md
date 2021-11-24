@@ -26,7 +26,7 @@ sorted es una funcion pura
 
 condicionales y bucles
 
-1 for
+1 for = sirve para hacer recorridos de colecciones (listas, str, tuplas...)
 
 2 if
 
