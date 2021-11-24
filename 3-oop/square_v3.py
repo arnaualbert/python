@@ -50,4 +50,3 @@ print("Vértice superior derecho del cuadrado s:")
 print(s.get_upper_right())
 
 #----------------------------------------------------------------------
-

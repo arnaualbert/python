@@ -64,15 +64,3 @@ print(s.get_upper_left_y())
 print("vertice superior derecho de el cuadrado s: ")
 print(s.get_upper_right_x())
 print(s.get_upper_right_y())
-
-
-
-
-
-
-
-
-
-
-
-

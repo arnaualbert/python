@@ -1,8 +1,6 @@
 # python
 
-brackets 
-
-() 
+() brackets 
 
 [] square
 
@@ -17,7 +15,6 @@ Funcion pura
 2 solo escribe en sus parametros de salida 
 
 3 para los mismos parametros de entrada siempre devuelve los mismos parametros de salida
-
 
 classe = tipo
 

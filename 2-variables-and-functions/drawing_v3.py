@@ -106,8 +106,6 @@ def draw_tree():
     draw_rectangle(-20, 0, 20, -100)
 
 
-
-
 # Main
 # --------------------------------------------
 configure_canvas(500, 500)
