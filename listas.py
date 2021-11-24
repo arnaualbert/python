@@ -1,6 +1,6 @@
 import pprint
 import random
-
+import copy
 # Lists
 
 # list literals
@@ -48,7 +48,7 @@ print(l6.index("d")) #da la posicion
 l6:list[str] = ["a", "b", "b", "c","c","c","d","e","f"]
 print(l6.count("c")) # cuenta elementos
 
-# sorted
+# sorted 
 # sorted te devuelve una nueva lista 
 l6: list[int] = [4,2,1,3,0]
 l6_sorted: list[int] = sorted(l6)
@@ -168,6 +168,15 @@ del l6 # borra la lista
 
 #--------------------------------------------------------------------------------------------------------------------------------------------
 
+l6: list[int] = [1,2,3]
+l7: list[int] = copy.copy(l6)
+print(l6)
+print(l7)
+
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------
 # prints
 print(l2_len)
 
