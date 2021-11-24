@@ -23,3 +23,23 @@ objeto = variable
 metodo = funcion 
 
 sorted es una funcion pura
+
+condicionales y bucles
+
+1 for
+
+2 if
+
+3 while
+
+1 for   
+
+names["Jhon", "Mary", "Lucy"]
+
+sintax :
+
+for name in names:
+    print(f"hola{name})
+
+
+name crea una nueva variable
