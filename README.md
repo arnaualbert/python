@@ -39,6 +39,7 @@ names["Jhon", "Mary", "Lucy"]
 sintax :
 
 for name in names:
+
     print(f"hola{name})
 
 
