@@ -7,4 +7,3 @@ index_list: list[int] = [0, 1, 2]
 
 for index in index_list:
     print(names[index])
-
