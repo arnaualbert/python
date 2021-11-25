@@ -38,7 +38,7 @@ condicionales y bucles (lops)
 
 1 for   
 
-names["Jhon", "Mary", "Lucy"]
+    names: str = ["Jhon", "Mary", "Lucy"]
 
 sintax :
 
