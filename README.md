@@ -56,3 +56,6 @@ F10: ejecuta linea
 F11: meterse dentro de la funcion
 
 shift+F11: salir de la funcion
+
+F5: debug
+
