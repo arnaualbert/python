@@ -38,9 +38,9 @@ names["Jhon", "Mary", "Lucy"]
 
 sintax :
 
-for name in names:
+    for name in names:
 
-    print(f"hola{name})
+        print(f"hola{name})
 
 
 name crea una nueva variable
