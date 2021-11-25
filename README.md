@@ -63,4 +63,6 @@ shift+F11: salir de la funcion
 
 F5: debug
 
+F2: renombra
+
 loop and rolling : desenrollar un bucle
