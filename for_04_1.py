@@ -1,15 +1,12 @@
-nums: list[int] = []
+nums: list[int] = [1, 2, 3]
 sumnums = 0
 
-print("Escribe el primer numero : ")
-num1: int = int(input())
-nums.append(num1)
-print("Escribe el segundo numero : ")
-num2: int = int(input())
-nums.append(num2)
-print("Escribe el tercer numero : ")
-num3: int = int(input())
-nums.append(num3)
+# num1: int = int(input("Escribe el primer numero : "))
+# nums.append(num1)
+# num2: int = int(input("Escribe el segundo numero : "))
+# nums.append(num2)
+# num3: int = int(input("Escribe el tercer numero : "))
+# nums.append(num3)
 
 for number in nums:
     sumnums += number
