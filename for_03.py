@@ -12,17 +12,16 @@ import copy
 # names: list[str] = []
 
 # ej 1,2,3,4
+
+# create empty list
 names: list[str] = []
 
-
-print("Escribe tu nombre: ")
-name1: str = input()
+# input names and save in the list names
+name1: str = input("Escribe tu nombre: ")
 names.append(name1)
-print("Escribe tu nombre: ")
-name2: str = input()
+name2: str = input("Escribe tu nombre: ")
 names.append(name2)
-print("Escribe tu nombre: ")
-name3: str = input()
+name3: str = input("Escribe tu nombre: ")
 names.append(name3)
 
 for name in names:

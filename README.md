@@ -8,6 +8,10 @@
 
 <> angle
 
+" double quotes
+
+' quote
+
 Funcion pura
 
 1 solo lee parametros de entrada 
@@ -59,3 +63,4 @@ shift+F11: salir de la funcion
 
 F5: debug
 
+loop and rolling : desenrollar un bucle
