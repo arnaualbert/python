@@ -66,3 +66,9 @@ F5: debug
 F2: renombra
 
 loop and rolling : desenrollar un bucle
+
+dir : lista variables
+
+type : dice el tipo
+
+id :  donde esta en la memoria
