@@ -12,7 +12,7 @@ is_adult:bool = (7 <= age <= 90)
 
 is_elder:bool = (90 <= age)
 
-if is_baby: # si se cumplen las dos cosas
+if is_baby: 
     print("regalar pañales")
 elif is_child:
     print("regalar pelota")
