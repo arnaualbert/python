@@ -1,7 +1,6 @@
 import pprint
 import random
 import copy
-import random
 
 # piedra papel o tijeras
 # input que escoge el jugador
