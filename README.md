@@ -72,3 +72,9 @@ dir : lista variables
 type : dice el tipo
 
 id :  donde esta en la memoria
+
+condicionals: (expresionbooleana es un true o un false)
+
+    if_expresionbooleana:
+
+        se ejecuta si la expresion booleana es cierta
