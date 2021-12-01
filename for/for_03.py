@@ -2,7 +2,7 @@ import pprint
 import random
 import copy
 
-#-------------------------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------------------------------------------
 # Recibe tres nombres por teclado
 # guardalos en una lista
 # recorre la lista imprimiendolos
@@ -27,5 +27,6 @@ names.append(name3)
 for name in names:
     print(name)
 
-names_reversed: list[str] = list(reversed(names)) #list es un constructor (construye listas)
+# list es un constructor (construye listas)
+names_reversed: list[str] = list(reversed(names))
 print(names_reversed)

@@ -1,4 +1,4 @@
-#----------------------------------------------------------------------
+# ----------------------------------------------------------------------
 class Square:
 
     # Class attributes go here.
@@ -11,7 +11,6 @@ class Square:
         self.y = y
         self.length = length
 
-
     def get_upper_left(self) -> tuple[float]:
         "Esta función devuelve el vértice superior izquierda del cuadrado"
 
@@ -21,7 +20,6 @@ class Square:
         upper_left_y = self.y + midlength
 
         return upper_left_x, upper_left_y
-
 
     def get_upper_right(self) -> tuple[float]:
         "Esta función devuelve el vértice superior derecha del cuadrado"
@@ -33,9 +31,9 @@ class Square:
 
         return upper_right_x, upper_right_y
 
-    
+
 # Main
-#----------------------------------------------------------------------
+# ----------------------------------------------------------------------
 s: Square = Square(0, 0, 10)
 
 print("Atributos del cuadrado s:")
@@ -49,4 +47,4 @@ print(s.get_upper_left())
 print("Vértice superior derecho del cuadrado s:")
 print(s.get_upper_right())
 
-#----------------------------------------------------------------------
+# ----------------------------------------------------------------------

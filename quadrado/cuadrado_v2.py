@@ -1,7 +1,7 @@
 class Square:
     x:     float
     y:     float
-    lenght:float
+    lenght: float
 
     def __init__(self, x: float, y: float, lenght: float):
         "Constructor"
@@ -10,9 +10,9 @@ class Square:
         self.y = y
         self.lenght = lenght
 
-    def get_upper_left_x(self) ->float :
+    def get_upper_left_x(self) -> float:
         "la x del vertice superior izquierdo es "
-        
+
         midlenght: float = self.lenght/2
 
         upper_left_x = self.x - midlenght
@@ -20,9 +20,9 @@ class Square:
         result = upper_left_x
         return result
 
-    def get_upper_left_y(self) ->float :
+    def get_upper_left_y(self) -> float:
         "la x del vertice superior izquierdo es "
-        
+
         midlenght: float = self.lenght/2
 
         upper_left_x = self.x - midlenght
@@ -30,9 +30,9 @@ class Square:
         result = upper_left_y
         return result
 
-    def get_upper_right_x(self) ->float :
+    def get_upper_right_x(self) -> float:
         "la x del vertice superior izquierdo es "
-        
+
         midlenght: float = self.lenght/2
 
         upper_right_x = self.x - midlenght
@@ -40,9 +40,9 @@ class Square:
         result = upper_right_x
         return result
 
-    def get_upper_right_y(self) ->float :
+    def get_upper_right_y(self) -> float:
         "la x del vertice superior izquierdo es "
-        
+
         midlenght: float = self.lenght/2
 
         upper_right_x = self.x - midlenght
@@ -50,7 +50,8 @@ class Square:
         result = upper_right_y
         return result
 
-s: Square = Square(0,0,10)
+
+s: Square = Square(0, 0, 10)
 
 print("Atributos de el quadrado s: ")
 print(s.x)

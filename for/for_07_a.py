@@ -1,6 +1,6 @@
 # recorrer una lista de nombres mostrando su indice dentro de la lista
 
-#-----------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------
 
 # solucion 1 indice escrito manualmente
 names: list[str] = ["John", "Mary", "Lucy"]

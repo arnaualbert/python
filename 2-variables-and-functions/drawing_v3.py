@@ -7,9 +7,11 @@ from turtle import *
 
 # Window and Canvas setup
 # --------------------------------------------
+
+
 def configure_canvas(
-    canvas_height: int,
-    canvas_width:  int):
+        canvas_height: int,
+        canvas_width:  int):
 
     # Coordinates of the window in the desktop
     window_top_left_x: int = 0
@@ -29,7 +31,7 @@ def draw_line(vertex1_x, vertex1_y,
 
     # Move to vertex1
     penup()
-    goto(vertex1_x, vertex1_y) 
+    goto(vertex1_x, vertex1_y)
 
     # Draw vertex1 -> vertex2
     pendown()
@@ -49,7 +51,6 @@ def draw_triangle(top_x, top_y):
     vertex3_x = top_x - 100
     vertex3_y = top_y - 100
 
-
     draw_line(vertex1_x, vertex1_y,
               vertex2_x, vertex2_y)
 
@@ -65,7 +66,7 @@ def draw_triangle(top_x, top_y):
 def draw_rectangle(top_left_x,     top_left_y,
                    bottom_right_x, bottom_right_y):
 
-    width  = bottom_right_x - top_left_x
+    width = bottom_right_x - top_left_x
 
     vertex1_x = top_left_x
     vertex1_y = top_left_y
@@ -78,7 +79,6 @@ def draw_rectangle(top_left_x,     top_left_y,
 
     vertex4_x = bottom_right_x - width
     vertex4_y = bottom_right_y
-
 
     draw_line(vertex1_x, vertex1_y,
               vertex2_x, vertex2_y)

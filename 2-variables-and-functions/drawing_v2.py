@@ -8,9 +8,11 @@ from turtle import *
 # --------------------------------------------
 
 # Window and Canvas setup
+
+
 def configure_canvas():
     canvas_height = 300
-    canvas_width  = 300
+    canvas_width = 300
 
     window_origin_x = 0
     window_origin_y = 0
@@ -25,10 +27,10 @@ def configure_canvas():
 def draw_triangle(origin_x, origin_y):
 
     penup()
-    
+
     goto(origin_x,
          origin_y)
-    
+
     pendown()
 
     goto(origin_x + 100,
@@ -45,7 +47,6 @@ def draw_triangle(origin_x, origin_y):
 # --------------------------------------------
 configure_canvas()
 
-draw_triangle(  0, 0)
+draw_triangle(0, 0)
 draw_triangle(-100, -100)
 draw_triangle(-200, -200)
-

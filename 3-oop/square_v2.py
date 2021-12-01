@@ -1,4 +1,4 @@
-#----------------------------------------------------------------------
+# ----------------------------------------------------------------------
 class Square:
 
     # Class variables. Will be shadowed! Remove later.
@@ -23,7 +23,6 @@ class Square:
 
         return upper_left_x, upper_left_y
 
-
     def get_upper_right(self) -> float:
         "Esta función devuelve la x un vértice del cuadrado"
 
@@ -33,8 +32,6 @@ class Square:
         upper_right_y = self.y + midlength
 
         return upper_right_x, upper_right_y
-
-    
 
 
 s: Square = Square(0, 0, 10)
@@ -49,26 +46,6 @@ print(s.get_upper_left())
 
 print("Vértice superior derecho del cuadrado s:")
 print(s.get_upper_right())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # #----------------------------------------------------------------------

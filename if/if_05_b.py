@@ -5,16 +5,20 @@ import copy
 # piedra papel o tijeras
 # input que escoge el jugador
 # cpu escoge aleatoriamente
-# anunciar el ganador 
+# anunciar el ganador
+
+# lista de opciones
 
 option: list[str] = ["rock", "paper", "scissors"]
-#usuario escoge
+
+# usuario escoge
 
 usr_hand: str = input("escoge : rock , paper, scissors: ")
 
-#cpu escoge
+# cpu escoge
 
 cpu_hand: str = random.choice(option)
+print(f"la cpu escoge : {cpu_hand}")
 
 if usr_hand == "rock" and cpu_hand == "paper":
     print("lose")

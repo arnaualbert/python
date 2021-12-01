@@ -9,11 +9,11 @@ s5: str = """"she said "i'm bussy!"""""
 
 s6: str = "las comillas simples y las dobles son identicas"
 
-s7: str = "a" #string de una sola letra no hay char en python
+s7: str = "a"  # string de una sola letra no hay char en python
 
 s8: str = """comillas triples"""
 
-#---------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------
 
 s1: str = "hello"
 s1[1] = "o"
@@ -22,19 +22,19 @@ pprint.pp(dir(s1))
 
 s2 = s1.upper()
 
-#substring
+# substring
 print(s1)
 print(s1[:])
 print(s1[0:])
 print(s1[0:5])
 print(s1[0:len(s1)])
 
-len(s1) #devuelve la longitud
+len(s1)  # devuelve la longitud
 
-#Funciones basicas : type(), id(), dir()
-#cuando se importa una libreria no se tiene que poner from --- import * se tiene que hacer import ---- as el nombre que tu quieras
+# Funciones basicas : type(), id(), dir()
+# cuando se importa una libreria no se tiene que poner from --- import * se tiene que hacer import ---- as el nombre que tu quieras
 
-#----------------------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------------
 
 # string normal
 normal_string: str = "hello\nworld"
@@ -51,9 +51,9 @@ name: str = "Arnau"
 format_string: str = f"hello {name}"
 print(format_string)
 
-#------------------------------------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------------------------------------------------
 
-#operaciones con strings
+# operaciones con strings
 
 # suma de strings
 greeting: str = "Hello"
@@ -71,5 +71,4 @@ print(concat)
 # multplicacion string (repeticion)
 print("hello " * 3)
 
-#----------------------------------------------------------------------------------------------------------------------------------------
-
+# ----------------------------------------------------------------------------------------------------------------------------------------
