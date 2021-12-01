@@ -18,7 +18,7 @@ cpu_hand: str = random.choice(option)
 
 if usr_hand == "rock" and cpu_hand == "paper":
     print("lose")
-elif usr_hand == "rock"  and cpu_hand == "scissors":
+elif usr_hand == "rock" and cpu_hand == "scissors":
     print("win")
 elif usr_hand == "paper" and cpu_hand == "scissors":
     print("lose")
