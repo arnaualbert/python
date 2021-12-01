@@ -19,4 +19,3 @@ index_list: list[int] = list(range(len(names)))
 
 for index in index_list:
     print(names[index])
-
