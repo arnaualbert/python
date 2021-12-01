@@ -78,3 +78,7 @@ condicionals: (expresionbooleana es un true o un false)
     if_expresionbooleana:
 
         se ejecuta si la expresion booleana es cierta
+        
+    else:
+
+        se ejecuta si la expresion booleana es falsa
