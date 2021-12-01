@@ -92,3 +92,5 @@ elif
     elif:
 
         se ejecuta si la expresion booleana es xierta pero diferente
+
+los bool siempre empiezan entre is o are
