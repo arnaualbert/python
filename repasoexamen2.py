@@ -1,1 +1,0 @@
-# usar un for para hacer sets de tres maches , guardar y mostrar puntuacion de el usuario y la cpu ,usar tuplas 
