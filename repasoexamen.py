@@ -13,7 +13,7 @@ import copy
 # lista de opciones
 
 option: list[str] = ["rock", "paper", "scissors"]
-draw = 0
+result = 0
 # usuario escoge
 
 def get_usrhand():
@@ -30,31 +30,31 @@ def get_cpuhand(option):
     return cpu_hand
 
 
-def get_result(draw):
+def get_result(result):
     if usr_hand == "rock" and cpu_hand == "paper":
-        draw - 1
+        result = 0
     elif usr_hand == "rock" and cpu_hand == "scissors":
-        draw + 1
+        result = 1
     elif usr_hand == "paper" and cpu_hand == "scissors":
-        draw - 1
+        result = 0
     elif usr_hand == "paper" and cpu_hand == "rock":
-        draw + 1
+        result = 1
     elif usr_hand == "scissors" and cpu_hand == "rock":
-        draw - 1
+        result = 0
     elif usr_hand == "scissors" and cpu_hand == "paper":
-        draw + 1
+        result = 1
     else:
-        draw + 2
+        result = 2
 
-def get_sp(draw):
-    if draw == -1:
+def get_sp(result):
+    if result == 0:
         print("loser")
-    elif draw == 1:
+    elif result == 1:
         print("winner")
-    elif draw == 2:
+    elif result == 2:
         print("draw")
 
 usr_hand = get_usrhand()
 cpu_hand = get_cpuhand(option)
-get_result(draw)
-get_sp(draw)
+get_result(result)
+get_sp(result)
