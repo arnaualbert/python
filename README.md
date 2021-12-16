@@ -94,3 +94,6 @@ elif
         se ejecuta si la expresion booleana es cierta pero diferente
 
 los bool siempre empiezan entre is o are
+
+while sirve para buscar algo y parar en medio
+
