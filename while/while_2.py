@@ -1,6 +1,3 @@
-# whiles loops
-#while ejecuta el body mientras la condicion sea true
-
 def loop_02() -> list[int]:
     """return a list of 10 int"""
 
@@ -17,4 +14,11 @@ def loop_02() -> list[int]:
         
     return result
 
-print(loop_02())
+# main
+#-------------------------------------------------------------------------------------
+
+num_list: list[int] = loop_02
+
+print(num_list)
+
+#-------------------------------------------------------------------------------------
