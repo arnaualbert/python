@@ -1,18 +1,21 @@
 # whiles loops
 #while ejecuta el body mientras la condicion sea true
 
+def loop_02() -> list[int]:
+    """return a list of 10 int"""
 
+    count = 0
+    finished: bool = (count == 10)
 
-count: int = 0
-finished: bool = (count > 3)
+    result: list[int] = []
 
+    while not finished:
 
-while not finished:
+        result.append(count)
+        count = count + 1
+        finished = (count == 10)
+        
 
-    #body
-    print(count)
+    return result
 
-    #update finishing condition
-    count = count + 1
-    finished = (count > 3)
-
+print(loop_02())
