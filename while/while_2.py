@@ -17,7 +17,7 @@ def loop_02() -> list[int]:
 # main
 #-------------------------------------------------------------------------------------
 
-num_list: list[int] = loop_02
+num_list: list[int] = loop_02()
 
 print(num_list)
 
