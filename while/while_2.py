@@ -4,7 +4,7 @@
 def loop_02() -> list[int]:
     """return a list of 10 int"""
 
-    count = 0
+    count: int = 0
     finished: bool = (count == 10)
 
     result: list[int] = []
@@ -12,8 +12,8 @@ def loop_02() -> list[int]:
     while not finished:
 
         result.append(count)
-        count = count + 1
-        finished = (count == 10)
+        count: int = count + 1
+        finished: bool = (count == 10)
         
 
     return result
