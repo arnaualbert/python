@@ -97,3 +97,24 @@ los bool siempre empiezan entre is o are
 
 while sirve para buscar algo y parar en medio
 
+while
+
+    while (condition):
+    
+        #body...
+    
+        #body,..
+    
+        #body...
+
+while ejecuta el body mientras la condicion sea true
+
+1.mira la condicion
+
+2.si es true ejecuta el body
+
+3.despues de ejecutar el body salta a la condicion otra vez
+
+4.si el condicion es false acaba
+
+5.la actualizacion de finished se tiene que hacer al final
