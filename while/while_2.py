@@ -15,7 +15,6 @@ def loop_02() -> list[int]:
         count: int = count + 1
         finished: bool = (count == 10)
         
-
     return result
 
 print(loop_02())
