@@ -1,12 +1,13 @@
-a:int = 0
-nums: list[int] = [0]
-total: int = 0
-f: int = int(input("pon un numero: "))
-finished : bool = (total > f)
+def get_calculate():
+    a: int = int(input("Di un numero: "))
+    b: int = 0
+    finished: bool = (a < 0)
 
-while not finished:
-    a = a +
-    total = total + nums
-    finished = (total > f)
+    while not finished:
+        b = b + a
+        a = a - 1
+        finished = (a < 0)
+    print(b)
 
-print(total)
+
+get_calculate()
