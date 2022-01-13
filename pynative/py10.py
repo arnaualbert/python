@@ -4,4 +4,5 @@ while not finished:
     count = count + 1
     print(count)
     finished = (count > -2)
-print("DONE!")
+    if finished : 
+        print("DONE!")
