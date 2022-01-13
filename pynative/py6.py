@@ -1,9 +1,6 @@
-count: int = 6
-cf: list[int] = []
-finished: bool = (count < 1)
-
-while not finished:
-    count = count - 1
-    cf.append(count)
-    print(cf)
-    finished = (count < 1)
+num = 75869
+count = 0
+while num != 0:
+    num = num // 10
+    count = count + 1
+print( count)
