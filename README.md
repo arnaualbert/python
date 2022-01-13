@@ -118,3 +118,11 @@ while ejecuta el body mientras la condicion sea true
 4.si el condicion es false acaba
 
 5.la actualizacion de finished se tiene que hacer al final
+
+Tools :
+
+PyTest
+
+MyPy
+
+PyLint

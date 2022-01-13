@@ -1,9 +1,12 @@
-
-a : int = 0
+a:int = 0
+nums: list[int] = [0]
+total: int = 0
 f: int = int(input("pon un numero: "))
-finished : bool = (a < f)
+finished : bool = (total > f)
 
 while not finished:
-    a = (a + 1)
-    print(a)
-    finished = (a < f)
+    a = a +
+    total = total + nums
+    finished = (total > f)
+
+print(total)
