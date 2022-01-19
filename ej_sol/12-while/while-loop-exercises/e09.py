@@ -2,12 +2,10 @@
 # https://pynative.com/python-if-else-and-for-loop-exercise-with-solutions/
 
 
+# Very simple. Straightforward loop.
 # -----------------------------------------------------------------------------
-def e01():
-    '''Exercise 1: Print First 10 natural numbers using while loop'''
-
-    start: int = 1
-    end:   int = 10
+def e09(start: int, end: int):
+    '''Exercise 9: Display numbers from -10 to -1 using for loop.'''
 
     iter:     int  = start
     finished: bool = (iter > end)
@@ -21,5 +19,5 @@ def e01():
 
 # Main
 # -----------------------------------------------------------------------------
-e01()
+e09(-10, -1)
 # -----------------------------------------------------------------------------

@@ -3,17 +3,18 @@
 
 
 # -----------------------------------------------------------------------------
-def e01():
-    '''Exercise 1: Print First 10 natural numbers using while loop'''
+def e04(input_num: int):
+    '''Exercise 4: Write a program to print multiplication table of a given number.'''
 
     start: int = 1
     end:   int = 10
 
-    iter:     int  = start
-    finished: bool = (iter > end)
+    iter:        int  = start
+    finished:    bool = (iter > end)
 
     while (not finished):
-        print(iter)
+        multiplication: int = input_num * iter
+        print(multiplication)
 
         iter     = iter + 1
         finished = (iter > end)
@@ -21,5 +22,7 @@ def e01():
 
 # Main
 # -----------------------------------------------------------------------------
-e01()
+# input_num: int = int(input("Enter number: "))
+# e04(input_num)
+e04(2)
 # -----------------------------------------------------------------------------

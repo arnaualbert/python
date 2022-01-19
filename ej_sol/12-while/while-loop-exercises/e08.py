@@ -3,23 +3,24 @@
 
 
 # -----------------------------------------------------------------------------
-def e01():
-    '''Exercise 1: Print First 10 natural numbers using while loop'''
+def e08(num_list: list[int]):
+    '''Exercise 8: Print list in reverse order using a loop.'''
 
-    start: int = 1
-    end:   int = 10
+    start: int = len(num_list) - 1
+    end:   int = 0
 
-    iter:     int  = start
-    finished: bool = (iter > end)
+    index:    int  = start
+    finished: bool = (index < end)
 
     while (not finished):
-        print(iter)
+        print(num_list[index])
 
-        iter     = iter + 1
-        finished = (iter > end)
+        index    = index - 1
+        finished = (index < end)
 
 
 # Main
 # -----------------------------------------------------------------------------
-e01()
+input_list: list[int] = [10, 20, 30, 40, 50]
+e08(input_list)
 # -----------------------------------------------------------------------------

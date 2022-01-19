@@ -2,12 +2,12 @@
 # https://pynative.com/python-if-else-and-for-loop-exercise-with-solutions/
 
 
+# Note: AVOID THE USE OF 'ELSE' AFTER A LOOP.
+# Only Python has it. It is almost never used. Forget about it.
+# The code is almost the same as exercise 9.
 # -----------------------------------------------------------------------------
-def e01():
-    '''Exercise 1: Print First 10 natural numbers using while loop'''
-
-    start: int = 1
-    end:   int = 10
+def e10(start: int, end: int):
+    '''Exercise 10: Use else block to display a message “Done” after successful execution of loop.'''
 
     iter:     int  = start
     finished: bool = (iter > end)
@@ -17,9 +17,11 @@ def e01():
 
         iter     = iter + 1
         finished = (iter > end)
+    else:
+        print("Done!")
 
 
 # Main
 # -----------------------------------------------------------------------------
-e01()
+e10(1, 3)
 # -----------------------------------------------------------------------------
