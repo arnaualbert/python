@@ -2,23 +2,23 @@
 
 # Indice
 
-# - [Brackets](#Brackets) 
+## - [Brackets](#Brackets) 
 
-# - [Funcion pura](#Funcion-pura) 
+## - [Funcion pura](#Funcion-pura) 
 
-# - [For](#For)
+## - [For](#For)
 
-# - [Condicionales if o elif](#Condicionales-if-o-elif) 
+## - [Condicionales if o elif](#Condicionales-if-o-elif) 
 
-# - [While](#While)
+## - [While](#While)
 
-# - [Assert](#Assert)
+## - [Assert](#Assert)
 
-# - [List comprehension](#List-comprehension)
+## - [List comprehension](#List-comprehension)
 
-# - [Tools](#Tools)
+## - [Tools](#Tools)
 
-# - [TIPS](#TIPS)
+## - [TIPS](#TIPS)
 
 # Brackets
 
