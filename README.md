@@ -1,5 +1,7 @@
 # python
 
+# Brackets
+
 () brackets 
 
 [] square
@@ -11,6 +13,8 @@
 " double quotes
 
 ' quote
+
+# Funcion pura
 
 Funcion pura
 
@@ -36,7 +40,7 @@ condicionales y bucles (lops)
 
 3 while
 
-1 for   
+# For   
 
 sintax :
 
@@ -55,23 +59,7 @@ locales : Las variables que estan dentro de una funcion. solo la funcion tiene a
 
 globales : Las variables que estan fuera de una funcion. estan en el modulo y todo el mundo tiene acceso a ella
 
-F10: ejecuta linea
-
-F11: meterse dentro de la funcion
-
-shift+F11: salir de la funcion
-
-F5: debug
-
-F2: renombra
-
-loop and rolling : desenrollar un bucle
-
-dir : lista variables
-
-type : dice el tipo
-
-id :  donde esta en la memoria
+# Condicionales if o elif
 
 condicionals: (expresionbooleana es un true o un false)
 
@@ -94,6 +82,8 @@ elif
         se ejecuta si la expresion booleana es cierta pero diferente
 
 los bool siempre empiezan entre is o are
+
+# While
 
 while sirve para buscar algo y parar en medio
 
@@ -119,6 +109,8 @@ while ejecuta el body mientras la condicion sea true
 
 5.la actualizacion de finished se tiene que hacer al final
 
+# Assert
+
 assert es un if que si falla tu programa termina
 
 condicion de assert tiene que ser True  si no mensage de error
@@ -129,10 +121,41 @@ assert
 
         assert (num >= 0), "Error: Factorial of a negative number is undefined!"
 
-Tools :
+# List comprehension
+
+Sirve para crear una nueva lista a partit de otra, la original no de modifica
+
+Es como escribir un bucle for pero en una sola linea
+
+se empieza por el medio
+
+    cube_list = [num **3  for num in [1,2,3]]
+                    3        1         2
+
+# Tools :
 
 PyTest
 
 MyPy
 
 PyLint
+
+# TIPS
+
+F10: ejecuta linea
+
+F11: meterse dentro de la funcion
+
+shift+F11: salir de la funcion
+
+F5: debug
+
+F2: renombra
+
+loop and rolling : desenrollar un bucle
+
+dir : lista variables
+
+type : dice el tipo
+
+id :  donde esta en la memoria
