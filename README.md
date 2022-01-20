@@ -1,5 +1,9 @@
 #  Apuntes Python
 
+# Indice
+
+# - [Funcion pura](#Funcion-pura) 
+
 # Brackets
 
 () brackets 
