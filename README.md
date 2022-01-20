@@ -119,6 +119,16 @@ while ejecuta el body mientras la condicion sea true
 
 5.la actualizacion de finished se tiene que hacer al final
 
+assert es un if que si falla tu programa termina
+
+condicion de assert tiene que ser True  si no mensage de error
+
+no es un funcion (assert) , nunca poner parentesis despues de assert
+
+assert
+
+        assert (num >= 0), "Error: Factorial of a negative number is undefined!"
+
 Tools :
 
 PyTest
