@@ -51,9 +51,9 @@ name crea una nueva variable
 
 variables : LOCALES Y GLOBALES
 
-locales : las variables que estan dentro de una funcion. solo la funcion tiene acceso a ella
+locales : Las variables que estan dentro de una funcion. solo la funcion tiene acceso a ella
 
-globales : ñas variables que estan fuera de una funcion. estan en el modulo y todo el mundo tiene acceso a ella
+globales : Las variables que estan fuera de una funcion. estan en el modulo y todo el mundo tiene acceso a ella
 
 F10: ejecuta linea
 
