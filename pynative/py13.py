@@ -8,4 +8,6 @@ def get_factorial():
         a = a - 1
         finished = (a < 1)
     print(b)
+
+
 get_factorial()
