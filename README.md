@@ -34,6 +34,8 @@
 
 ' quote
 
+### - [Ir al índice](#Indice).
+
 # Funcion pura
 
 Funcion pura
@@ -60,6 +62,8 @@ condicionales y bucles (loops)
 
 3 while
 
+### - [Ir al índice](#Indice).
+
 # For   
 
 sintax :
@@ -78,6 +82,8 @@ Variables : LOCALES Y GLOBALES
 Locales : Las variables que estan dentro de una funcion. solo la funcion tiene acceso a ella
 
 Globales : Las variables que estan fuera de una funcion. estan en el modulo y todo el mundo tiene acceso a ella
+
+### - [Ir al índice](#Indice).
 
 # Condicionales if o elif
 
@@ -102,6 +108,8 @@ elif
         se ejecuta si la expresion booleana es cierta pero diferente
 
 Los bool siempre empiezan entre is o are
+
+### - [Ir al índice](#Indice).
 
 # While
 
@@ -129,6 +137,8 @@ While ejecuta el body mientras la condicion sea true
 
 5.La actualizacion de finished se tiene que hacer al final
 
+### - [Ir al índice](#Indice).
+
 # Assert
 
 assert es un if que si falla tu programa termina
@@ -141,6 +151,8 @@ assert
 
         assert (num >= 0), "Error: Factorial of a negative number is undefined!"
 
+### - [Ir al índice](#Indice).
+
 # List comprehension
 
 Sirve para crear una nueva lista a partit de otra, la original no de modifica
@@ -152,6 +164,8 @@ Se empieza por el medio
     cube_list = [num **3  for num in [1,2,3]]
                     3        1         2
 
+### - [Ir al índice](#Indice).
+
 # Tools :
 
 PyTest
@@ -159,6 +173,8 @@ PyTest
 MyPy
 
 PyLint
+
+### - [Ir al índice](#Indice).
 
 # TIPS
 
@@ -179,3 +195,5 @@ dir : lista variables
 type : dice el tipo
 
 id :  donde esta en la memoria
+
+### - [Ir al índice](#Indice).
