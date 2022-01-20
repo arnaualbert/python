@@ -24,15 +24,15 @@ Funcion pura
 
 3 Para los mismos parametros de entrada siempre devuelve los mismos parametros de salida
 
-Classe = tipo
+Classe = Tipo
 
-Objeto = variable
+Objeto = Variable
 
-Metodo = funcion 
+Metodo = Funcion 
 
 sorted es una funcion pura
 
-condicionales y bucles (lops)
+condicionales y bucles (loops)
 
 1 for = sirve para hacer recorridos de colecciones (listas, str, tuplas...)
 
