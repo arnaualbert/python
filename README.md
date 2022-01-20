@@ -41,11 +41,13 @@ condicionales y bucles (lops)
 sintax :
 
 '''python
+
     names: str = ["Jhon", "Mary", "Lucy"]
 
     for name in names:
 
         print(f"hola{name})
+        
 '''
 
 name crea una nueva variable
