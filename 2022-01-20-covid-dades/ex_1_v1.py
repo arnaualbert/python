@@ -14,5 +14,5 @@ def get_column(rows: list[str]) -> list[list[str]]:
 def get_dosis(table: list[list[str]]) -> list[list[int]]:
     pass
 
-def get_sum(dosis: list[list[int]]) -> int:
+def get_sum(dosis: list[list[int]]) -> tuple[int,int]:
     pass
