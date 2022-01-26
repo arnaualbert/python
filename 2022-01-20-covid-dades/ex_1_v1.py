@@ -11,8 +11,8 @@ def get_rows(contents:str) -> list[str]:
 def get_column(rows: list[str]) -> list[list[str]]:
     pass
 
-def get_dosis(table: list[list[str]]) -> list[int]:
+def get_dosis(table: list[list[str]]) -> list[list[int]]:
     pass
 
-def get_sum(dosis: int) -> int:
+def get_sum(dosis: list[list[int]]) -> int:
     pass
