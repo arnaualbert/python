@@ -137,6 +137,8 @@ While ejecuta el body mientras la condicion sea true
 
 5.La actualizacion de finished se tiene que hacer al final
 
+## - [ej_while](main/while)
+
 ### - [Ir al índice](#Indice).
 
 # Assert
