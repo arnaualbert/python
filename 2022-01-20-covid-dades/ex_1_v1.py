@@ -28,17 +28,21 @@ def get_dosis_one(table: list[list[str]]) -> list[int]:
     return dosi1_list
 
 def get_dosis_two(table: list[list[str]]) -> list[int]:
-    dosis2: list[list[int]] = []
-    index = 0
-    b: list[int]= []
-    for i in table:
-        b.append(table[index][6])
-        index = index + 1
-    del b[0]
-    dosis2.append(b)
-    print(dosis2)
+    # dosis2: list[list[int]] = []
+    # index = 0
+    # b: list[int]= []
+    # for i in table:
+    #     b.append(table[index][6])
+    #     index = index + 1
+    # del b[0]
+    # dosis2.append(b)
+    # print(dosis2)
+    dosi2_list: list[int]= []
 
-    return dosis2
+    for row in table[1:]:
+        dosi2_list.append(int(row[6]))
+
+    return dosi2_list
 
 def get_sum_one(dosis: list[list[int]]) -> int:#tuple[int,int,int]:
     # for i in range(len(dosis)):
