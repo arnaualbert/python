@@ -24,7 +24,7 @@ def get_dosis_one(table: list[list[str]]) -> list[int]:
 
     for row in table[1:]:
         dosi1_list.append(int(row[5]))
-    print(dosi1_list)
+
     return dosi1_list
 
 def get_dosis_two(table: list[list[str]]) -> list[int]:
@@ -42,7 +42,7 @@ def get_dosis_two(table: list[list[str]]) -> list[int]:
     for row in table[1:]:
         dosi2_list.append(int(row[6]))
 
-    print(dosi2_list)
+
     return dosi2_list
 
 def get_sum_one(dosi1_list: list[int]) -> int:#tuple[int,int,int]:
@@ -53,7 +53,7 @@ def get_sum_one(dosi1_list: list[int]) -> int:#tuple[int,int,int]:
     # sum_one = sum(int_list)
     # return sum_one
     sum1: int = sum(dosi1_list)
-    print(sum1)
+
     return sum1
 
 
@@ -65,7 +65,7 @@ def get_sum_two(dosi2_list: list[int]) -> int:#tuple[int,int,int]:
     # sum_one = sum(int_list)
     # return sum_one
     sum2: int = sum(dosi2_list)
-    print(sum2)
+
     return sum2
 
 
