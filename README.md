@@ -83,6 +83,8 @@ Locales : Las variables que estan dentro de una funcion. solo la funcion tiene a
 
 Globales : Las variables que estan fuera de una funcion. estan en el modulo y todo el mundo tiene acceso a ella
 
+#### - [ej_for](for)
+
 ### - [Ir al índice](#Indice).
 
 # Condicionales if o elif
@@ -111,6 +113,8 @@ Los bool siempre empiezan entre is o are
 
 ### - [Ir al índice](#Indice).
 
+#### - [ej_if](if)
+
 # While
 
 While sirve para buscar algo y parar en medio
@@ -137,7 +141,7 @@ While ejecuta el body mientras la condicion sea true
 
 5.La actualizacion de finished se tiene que hacer al final
 
-#### [ej_while](while)
+#### - [ej_while](while)
 
 ### - [Ir al índice](#Indice).
 
