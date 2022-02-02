@@ -81,6 +81,9 @@ dosis:    list[int]       = get_dosis_one(table)
 dosis2:   list[int]       = get_dosis_two(table)
 sum_o:    int             = get_sum_one(dosis)
 sum_t:    int             = get_sum_two(dosis2)
+
+print(f"El total de vacunados de la primera dosis es : {sum_o}")
+print(f"El total de vacunados de la segunda dosis es : {sum_t}")
 # for row in table:
 #     print(row)
 
