@@ -60,9 +60,9 @@ def get_sum_one(dosis: list[list[int]]) -> int:#tuple[int,int,int]:
 contents: str             = get_file("2022-01-20-covid-dades-simple.csv")
 rows:     list[str]       = get_rows(contents)
 table:    list[list[str]] = get_columns(rows)
-dosis:    list[list[int]] = get_dosis_one(table)
-dosis2:    list[list[int]] = get_dosis_two(table)
-sum_o: int= get_sum_one(dosis)
+dosis:    list[int]       = get_dosis_one(table)
+dosis2:   list[int]       = get_dosis_two(table)
+sum_o:    int             = get_sum_one(dosis)
 # for row in table:
 #     print(row)
 
