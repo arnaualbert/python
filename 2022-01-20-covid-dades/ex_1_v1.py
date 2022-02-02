@@ -80,7 +80,7 @@ table:    list[list[str]] = get_columns(rows)
 dosis:    list[int]       = get_dosis_one(table)
 dosis2:   list[int]       = get_dosis_two(table)
 sum_o:    int             = get_sum_one(dosis)
-sum_t:    int             = get_sum_two(dosis)
+sum_t:    int             = get_sum_two(dosis2)
 # for row in table:
 #     print(row)
 
