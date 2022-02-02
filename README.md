@@ -111,9 +111,9 @@ elif
 
 Los bool siempre empiezan entre is o are
 
-### - [Ir al índice](#Indice).
-
 #### - [ej_if](if)
+
+### - [Ir al índice](#Indice).
 
 # While
 
