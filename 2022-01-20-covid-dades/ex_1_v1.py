@@ -24,7 +24,7 @@ def get_dosis_one(table: list[list[str]]) -> list[int]:
 
     for row in table[1:]:
         dosi1_list.append(int(row[5]))
-
+    print(dosi1_list)
     return dosi1_list
 
 def get_dosis_two(table: list[list[str]]) -> list[int]:
@@ -42,16 +42,33 @@ def get_dosis_two(table: list[list[str]]) -> list[int]:
     for row in table[1:]:
         dosi2_list.append(int(row[6]))
 
+    print(dosi2_list)
     return dosi2_list
 
-def get_sum_one(dosis: list[list[int]]) -> int:#tuple[int,int,int]:
+def get_sum_one(dosi1_list: list[int]) -> int:#tuple[int,int,int]:
     # for i in range(len(dosis)):
     #     dosis[i] = list[int](dosis[i])
     # sum_one = sum(dosis)
     # int_list = [int(i) for i in dosis]
     # sum_one = sum(int_list)
     # return sum_one
-    pass
+    sum1: int = sum(dosi1_list)
+    print(sum1)
+    return sum1
+
+
+def get_sum_two(dosi2_list: list[int]) -> int:#tuple[int,int,int]:
+    # for i in range(len(dosis)):
+    #     dosis[i] = list[int](dosis[i])
+    # sum_one = sum(dosis)
+    # int_list = [int(i) for i in dosis]
+    # sum_one = sum(int_list)
+    # return sum_one
+    sum2: int = sum(dosi2_list)
+    print(sum2)
+    return sum2
+
+
 # get_file("/home/arnaualbert/Desktop/Python/2022-01-20-covid-dades/2022-01-20-covid-dades-simple.csv")
 # print(get_rows(get_file("/home/arnaualbert/Desktop/Python/2022-01-20-covid-dades/2022-01-20-covid-dades-simple.csv")))
 # print(get_column(get_rows(get_file("/home/arnaualbert/Desktop/Python/2022-01-20-covid-dades/2022-01-20-covid-dades-simple.csv"))))
@@ -63,6 +80,7 @@ table:    list[list[str]] = get_columns(rows)
 dosis:    list[int]       = get_dosis_one(table)
 dosis2:   list[int]       = get_dosis_two(table)
 sum_o:    int             = get_sum_one(dosis)
+sum_t:    int             = get_sum_two(dosis)
 # for row in table:
 #     print(row)
 
