@@ -73,7 +73,11 @@ def get_sum_two(dosi2_list: list[int]) -> int:  # tuple[int,int,int]:
 
     return sum2
 
+def get_diff(sum2: int,sum1: int) -> int:
 
+    dif: int = sum1-sum2
+
+    return dif
 # get_file("/home/arnaualbert/Desktop/Python/2022-01-20-covid-dades/2022-01-20-covid-dades-simple.csv")
 # print(get_rows(get_file("/home/arnaualbert/Desktop/Python/2022-01-20-covid-dades/2022-01-20-covid-dades-simple.csv")))
 # print(get_column(get_rows(get_file("/home/arnaualbert/Desktop/Python/2022-01-20-covid-dades/2022-01-20-covid-dades-simple.csv"))))
@@ -86,8 +90,10 @@ dosis:    list[int] = get_dosis_one(table)
 dosis2:   list[int] = get_dosis_two(table)
 sum_o:    int = get_sum_one(dosis)
 sum_t:    int = get_sum_two(dosis2)
+diff:     int= get_diff(sum_t,sum_o)
 
 print(f"El total de vacunados de la primera dosis es : {sum_o}")
 print(f"El total de vacunados de la segunda dosis es : {sum_t}")
+print(f"La diferencia es : {diff}")
 # for row in table:
 #     print(row)
