@@ -201,6 +201,10 @@ La ventaja de los diccionarios de que nos permite buscar los valores por clave r
 
 Para buscar un  diccionario[clave]
 
+Para saber las claves diccionario.key()
+
+Para saver los valores diccionario.value()
+
 ```python
     agenda: dict[str,int] = {}#diccionario bacio
 
