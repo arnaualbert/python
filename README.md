@@ -68,11 +68,13 @@ condicionales y bucles (loops)
 
 sintax :
 
+```python
     names: str = ["Jhon", "Mary", "Lucy"]
 
     for name in names:
 
         print(f"hola{name})
+```
 
 
 name crea una nueva variable
@@ -91,7 +93,8 @@ Globales : Las variables que estan fuera de una funcion. estan en el modulo y to
 
 Condicionales: (expresionbooleana es un true o un false)
 
-    if_expresionbooleana:
+```python
+    if expresionbooleana:
 
         se ejecuta si la expresion booleana es cierta
 
@@ -101,13 +104,14 @@ Condicionales: (expresionbooleana es un true o un false)
 
 elif
 
-    if_expresionbooleana:
+    if expresionbooleana:
 
         se ejecuta si la expresion booleana es cierta
         
     elif:
 
         se ejecuta si la expresion booleana es cierta pero diferente
+```
 
 Los bool siempre empiezan entre is o are
 
@@ -121,13 +125,20 @@ While sirve para buscar algo y parar en medio
 
 while
 
-    while (condition):
-    
-        #body...
-    
-        #body,..
-    
-        #body...
+```python
+count: int = 0
+finished: bool = (count > 3)
+
+
+while not finished:
+
+    # body
+    print(count)
+
+    # update finishing condition
+    count = count + 1
+    finished = (count > 3)
+```
 
 While ejecuta el body mientras la condicion sea true
 
@@ -171,10 +182,12 @@ Funcion pura
 
 Se empieza por el medio
 
+```python
     cube_list = [num **3  for num in [1,2,3]]
                     3        1         2
 
     newlist = [expression for item in iterable if condition == True]
+```
 
 ### - [Ir al índice](#Indice).
 
