@@ -155,7 +155,9 @@ No es un funcion (assert) , nunca poner parentesis despues de assert
 
 assert
 
-        assert (num >= 0), "Error: Factorial of a negative number is undefined!"
+```python
+assert (num >= 0), "Error: Factorial of a negative number is undefined!"
+```
 
 ### - [Ir al índice](#Indice).
 
@@ -171,7 +173,7 @@ Se empieza por el medio
 
     cube_list = [num **3  for num in [1,2,3]]
                     3        1         2
-                    
+
     newlist = [expression for item in iterable if condition == True]
 
 ### - [Ir al índice](#Indice).
@@ -207,3 +209,4 @@ type : dice el tipo
 id :  donde esta en la memoria
 
 ### - [Ir al índice](#Indice).
+
