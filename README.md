@@ -212,7 +212,7 @@ Para insertar un valor en el diccionario es diccionario[clave] - valor
 Para juntar diccionarios es dict(zip(dic1,dic2))
 
 ```python
-    agenda: dict[str,int] = {}#diccionario bacio
+    agenda: dict[str,int] = {}#diccionario vacio
 
     agenda["Gabriel"] - 123
 
