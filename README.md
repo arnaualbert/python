@@ -207,10 +207,16 @@ Para saber las claves diccionario.key()
 
 Para saver los valores diccionario.value()
 
+Para insertar un valor en el diccionario es diccionario[clave] - valor
+
+Para juntar diccionarios es dict(zip(dic1,dic2))
+
 ```python
     agenda: dict[str,int] = {}#diccionario bacio
 
-    agenda = {"Gabriel": 123, "Alex":456, "Pau":789}
+    agenda["Gabriel"] - 123
+
+    agenda = {"Gabriel": 123, "Alex":456, "Pau":789}#diccionario con claves y sus valores
                 clave    valor
                 key      value
 ```
