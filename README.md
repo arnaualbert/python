@@ -211,6 +211,9 @@ Para insertar un valor en el diccionario es diccionario[clave] - valor
 
 Para juntar diccionarios es dict(zip(dic1,dic2))
 
+Copiar diccionario en diccionario dict2.update(dic) pone los datos de dic en dic2
+
+
 ```python
     agenda: dict[str,int] = {}#diccionario vacio
 
