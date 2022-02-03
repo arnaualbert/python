@@ -16,7 +16,7 @@ def get_columns(rows: list[str]) -> list[list[str]]:
     table: list[list[str]] = []
 
     for row in rows:
-        if row.find("BARCELONA"):
+        if "BARCELONA" in row:
             splitted_row: list[str] = row.split(";")
             table.append(splitted_row)
     return table 
