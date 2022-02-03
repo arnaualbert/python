@@ -171,6 +171,8 @@ Se empieza por el medio
 
     cube_list = [num **3  for num in [1,2,3]]
                     3        1         2
+                    
+    newlist = [expression for item in iterable if condition == True]
 
 ### - [Ir al índice](#Indice).
 
