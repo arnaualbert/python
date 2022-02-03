@@ -191,6 +191,20 @@ Se empieza por el medio
 
 ### - [Ir al índice](#Indice).
 
+# Dictionary
+
+Para hacer un diccionario va bien poner los tipos
+
+```python
+    agenda: dict[str,int] = {}#diccionario bacio
+
+    agenda = {"Gabriel": 123, "Alex":456, "Pau":789}
+                clave    valor
+                key      value
+```
+
+### - [Ir al índice](#Indice).
+
 # Tools
 
 PyTest
