@@ -165,6 +165,8 @@ Sirve para crear una nueva lista a partit de otra, la original no de modifica
 
 Es como escribir un bucle for pero en una sola linea
 
+Funcion pura
+
 Se empieza por el medio
 
     cube_list = [num **3  for num in [1,2,3]]
