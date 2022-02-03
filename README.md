@@ -16,6 +16,8 @@
 
 ## - [List comprehension](#List-comprehension)
 
+## - [Dictionary](#Dictionary)
+
 ## - [Tools](#Tools)
 
 ## - [TIPS](#TIPS)
