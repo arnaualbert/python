@@ -26,7 +26,7 @@ def get_dosis_one(table: list[list[str]]) -> list[int]:
 
     dosi1_list: list[int] = []
 
-    for row in table[1:]:
+    for row in table:
         dosi1_list.append(int(row[20]))
 
     return dosi1_list
@@ -44,7 +44,7 @@ def get_dosis_two(table: list[list[str]]) -> list[int]:
     # print(dosis2)
     dosi2_list: list[int] = []
 
-    for row in table[1:]:
+    for row in table:
         dosi2_list.append(int(row[21]))
 
     return dosi2_list
