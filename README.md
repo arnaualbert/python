@@ -195,6 +195,12 @@ Se empieza por el medio
 
 Para hacer un diccionario va bien poner los tipos
 
+Es una estructura de datos que nos permite almacenar parejas de datos : clave y valor
+
+La ventaja de los diccionarios de que nos permite buscar los valores por clave rapidamente
+
+Para buscar un  diccionario[clave]
+
 ```python
     agenda: dict[str,int] = {}#diccionario bacio
 
