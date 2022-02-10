@@ -226,6 +226,13 @@ Copiar diccionario en diccionario dict2.update(dic) pone los datos de dic en dic
 
 ### - [Ir al índice](#Indice).
 
+# Lambda
+
+es una funcion anonima (sin nombre)
+
+sirve para cuando se quieren hacer funciones pero se ponen como un parametro
+
+
 # Tools
 
 PyTest
