@@ -285,5 +285,7 @@ type : dice el tipo
 
 id :  donde esta en la memoria
 
+sorted. ordena :  sorted(item_list, key=get_value)
+
 ### - [Ir al índice](#Indice).
 
