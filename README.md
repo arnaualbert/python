@@ -265,6 +265,16 @@ PyLint
 
 ### - [Ir al índice](#Indice).
 
+# Practica
+
+SSG STATIC SITE GENERATOR
+
+cliente                           servidor(vendedor) 
+
+navegador(firefox, chrome)      ordenador con programas echos a medida
+
+
+
 # TIPS
 
 F10: ejecuta linea
