@@ -275,6 +275,11 @@ navegador(firefox, chrome)      ordenador con programas echos a medida
 
                                 en linux /var/www/html hay archivos html
 
+python -m http.server
+
+127.0.0.1:8000 (direccion propia)
+
+
 # TIPS
 
 F10: ejecuta linea
