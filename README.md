@@ -232,6 +232,17 @@ es una funcion anonima (sin nombre)
 
 sirve para cuando se quieren hacer funciones pero se ponen como un parametro
 
+la funcion se escribe a la derecha : key=lambda item: item[1]
+
+se pensaron para hacer funciones cortyas y sencillas solo permiten una expresion en el cuerpo de la lambda
+
+la lambda devuelve el resultado de la expresion
+
+se suelen usar como parametros en otras funciones
+
+```python
+    min(item_list, key=lambda item: item[1])
+```
 
 # Tools
 
