@@ -18,6 +18,8 @@
 
 ## - [Dictionary](#Dictionary)
 
+## - [Lambda](#Lambda)
+
 ## - [Tools](#Tools)
 
 ## - [TIPS](#TIPS)
@@ -243,6 +245,8 @@ se suelen usar como parametros en otras funciones
 ```python
     min(item_list, key=lambda item: item[1])
 ```
+
+### - [Ir al índice](#Indice).
 
 # Tools
 
