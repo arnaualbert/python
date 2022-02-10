@@ -244,6 +244,13 @@ se suelen usar como parametros en otras funciones
 
 ```python
     min(item_list, key=lambda item: item[1])
+
+    def sumar(a,b):
+        return a +b
+
+    #igual que:
+
+    sumar2 = lambda a,b: a + b
 ```
 
 ### - [Ir al índice](#Indice).
