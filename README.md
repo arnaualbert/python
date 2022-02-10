@@ -273,7 +273,7 @@ cliente                           servidor(vendedor)
 
 navegador(firefox, chrome)      ordenador con programas echos a medida
 
-
+                                en linux /var/www/html hay archivos html
 
 # TIPS
 
