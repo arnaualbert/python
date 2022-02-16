@@ -304,6 +304,4 @@ sorted. ordena :  sorted(item_list, key=get_value)
 
 para clonar repositorio es : git clone direccion
 
-
-
 ### - [Ir al índice](#Indice).
