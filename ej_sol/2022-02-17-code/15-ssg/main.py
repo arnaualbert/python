@@ -16,6 +16,8 @@ import sys
 import cmdline
 import engine
 
+import pprint
+
 
 # -----------------------------------------------------------------------------
 def main(input_dir: Path, output_dir: Path) -> None:

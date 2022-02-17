@@ -29,7 +29,7 @@ def print_dict(data: dict):
 def show_no_problem_with_immutable_default_values():
 
     keys:          list[str] = ['Anna', 'Lucy']
-    default_value: dict      = 12000
+    default_value: int       = 12000
     result:        dict      = dict.fromkeys(keys, default_value)
 
     # Before changing data

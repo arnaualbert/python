@@ -7,5 +7,4 @@ import sys
 
 import engine
 
-def get_txt(lista_amigos: Path):
-    
+def get_txt(input_dir: Path,):
