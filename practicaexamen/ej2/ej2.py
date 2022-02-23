@@ -1,5 +1,4 @@
-from ast import arg
-from os import rename
+import os
 from pathlib import Path
 from re import S
 from typing import Iterator
@@ -39,12 +38,30 @@ def change_name(archivos: list[str],nuevos_archivos: list[str]):
     #         rename(archivo,nuevos_archivos[1])
     #     elif archivo == "a3.txt":
     #         rename(archivo,nuevos_archivos[2])
+    # shutil.copy("a1.txt",)
+
+    # for archivo in archivos:
+    #     if archivo == archivos[0]:
+    #         rename(archivo,nuevos_archivos[0])
+    #     elif archivo == archivos[1]:
+    #         rename(archivo,nuevos_archivos[1])
+    #     elif archivo == archivos[2]:
+    #         rename(archivo,nuevos_archivos[2])
     for archivo in archivos:
         if archivo == archivos[0]:
-            rename(archivo,nuevos_archivos[0])
+            shutil.copy(archivo,"./archivos")
         elif archivo == archivos[1]:
-            rename(archivo,nuevos_archivos[1])
+            shutil.copy(archivo,"./archivos")
         elif archivo == archivos[2]:
-            rename(archivo,nuevos_archivos[2])
+            shutil.copy(archivo,"./archivos")
+
+    for archivo in archivos:
+        if archivo == archivos[0]:
+            os.rename(archivo,nuevos_archivos[0])
+        elif archivo == archivos[1]:
+            os.rename(archivo,nuevos_archivos[1])
+        elif archivo == archivos[2]:
+            os.rename(archivo,nuevos_archivos[2])
+
 
 change_name(["a1.txt","a2.txt","a3.txt"],["b1.txt","b2.txt","b3.txt"])
