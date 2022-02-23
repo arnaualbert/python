@@ -6,7 +6,7 @@ def get_espacio(saber_espacio: Path):
 #    total = os.stat(saber_espacio).st_size
 #     sub_dirs: list[Path] = Path(saber_espacio).rglob('*')
     # sub_dirs: list[Path] = Path('/home').glob('*')
-    total: Path = Path('/home').stat().st_size
+    total: Path = Path(saber_espacio).stat().st_size
     
     return total
 
