@@ -30,7 +30,7 @@ los valores son listas de strings en los numeros de cada columna
 
 5 leer el archivo .csv y convertirlo en una tabla html usando jinja
 
-el resultado final tiene que ser un archivo .html que se vea en el nabegador
+el resultado final tiene que ser un archivo .html que se vea en el navegador
 
 6 hacer un programa "escoger" que recibe multiples parametros por la linea de comandos y escoge uno al azar 
 
