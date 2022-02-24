@@ -1,2 +1,2 @@
-DEAR {{name}}
+DEAR John
 hello welcome to the world

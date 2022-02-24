@@ -1,2 +1,2 @@
-DEAR {{name}}
+DEAR Lucy
 hello welcome to the world

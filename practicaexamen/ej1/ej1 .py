@@ -1,9 +1,10 @@
 
+from importlib.resources import path
 from pathlib import Path
 import shutil
 import engine
 
-def get_txt(txt_file: Path):
+def get_txt(txt_file: Path, txt_template: Path):
 
     #coge el archivo lo lee y le saca los espacios
     inv: str = Path("friends.txt").read_text()
@@ -22,19 +23,15 @@ def get_txt(txt_file: Path):
     # name_list = [inv]
     # for nombre in inv:
     #     name_list.append(nombre)
-    print(names_list)
     for name in names_list:
-        if name == names_list[0]:
-            engine.fill_template(name)
-            shutil.copy("./input/invitation.txt","./invitation1.txt")
-        elif name == names_list[1]:
-            engine.fill_template(name)
-            shutil.copy("./input/invitation.txt","./invitation2.txt")
-        elif name == names_list[2]:
-            engine.fill_template(name)
-            shutil.copy("./input/invitation.txt","./invitation3.txt")
+        tmp_dir: Path = Path(".")
+        var_dict: dict = {"name": name}
+        invitation: str = engine.fill_template(tmp_dir,txt_template,var_dict)
+        invitation_new : str = f'{name}.txt'
+        ruta_invitation : Path = Path(invitation_new)
+        ruta_invitation.write_text(invitation)
 
 
 
-get_txt("/ej1/friends.txt") 
+get_txt("friends.txt","invitation.txt") 
 

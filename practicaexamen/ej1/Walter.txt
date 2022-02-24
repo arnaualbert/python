@@ -1,2 +1,2 @@
-DEAR {{name}}
+DEAR Walter
 hello welcome to the world
