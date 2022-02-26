@@ -16,3 +16,8 @@ p {
 p.meta {
     color: #e76f51;
 }
+
+img{
+    height: 100px;
+    width: 50px;
+}
