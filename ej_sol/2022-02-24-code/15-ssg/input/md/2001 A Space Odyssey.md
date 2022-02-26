@@ -1,5 +1,5 @@
 ---
-title:  2001: A Space Odyssey
+title:  2001 A Space Odyssey
 date:   1968
 author: Stanley Kubrick
 ---

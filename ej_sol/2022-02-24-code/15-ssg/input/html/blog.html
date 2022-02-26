@@ -14,11 +14,16 @@
     </head>
 
     <body>
-        <div class="topnav">
-            {% for entry_html, entry_metadata in entry_list %}
-            <a href="./{{entry_metadata.title}}.html" target="_blank">{{entry_metadata.title}}</a>
-            {% endfor %}
-        </div>
+        {% for entry_html, entry_metadata in entry_list %}
+            <h1>{{ entry_metadata.title }}</h1>
+
+            <p class="meta">
+                Date:   {{ entry_metadata.date }}
+                Author: {{ entry_metadata.author }}
+            </p>
+
+            {{ entry_html|safe|indent(width=12) }}
+        {% endfor %}
         <script src="js/script.js"></script>
     </body>
 

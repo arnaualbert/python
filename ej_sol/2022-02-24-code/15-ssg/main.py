@@ -15,7 +15,7 @@ import sys
 
 import cmdline
 import engine
-
+import os
 import pprint
 
 
@@ -47,8 +47,18 @@ def main(input_dir: Path, output_dir: Path) -> None:
     shutil.copytree(input_dir/"css", output_dir/"css", dirs_exist_ok=True)
     shutil.copytree(input_dir/"img", output_dir/"img", dirs_exist_ok=True)
     shutil.copytree(input_dir/"js",  output_dir/"js",  dirs_exist_ok=True)
+    
+    names : list[str] = ["2001 A Space Odyssey","Arrival","Cape Fear","Catch Me If You Can","Jaws","Tenet","The Shining"]
 
+    for name in names:
+        template_dir:      Path = input_dir/"html"
+        template_filename: str  = "blog.html"
+        var_dict:         dict = {"entry": html_str_list}
+        html_str:          str  = engine.fill_template(template_dir, template_filename, var_dict)
 
+        # Write index.html to output dir
+        output_dir.mkdir(exist_ok=True)
+        (output_dir/f"{name}.html").write_text(html_str)
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 
