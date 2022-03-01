@@ -47,7 +47,7 @@ def main(input_dir: Path, output_dir: Path) -> None:
     shutil.copytree(input_dir/"css", output_dir/"css", dirs_exist_ok=True)
     shutil.copytree(input_dir/"img", output_dir/"img", dirs_exist_ok=True)
     shutil.copytree(input_dir/"js",  output_dir/"js",  dirs_exist_ok=True)
-    
+    # casi funciona
     names : list[str] = ["2001 A Space Odyssey","Arrival","Cape Fear","Catch Me If You Can","Jaws","Tenet","The Shining"]
 
     for name in names:
@@ -59,6 +59,9 @@ def main(input_dir: Path, output_dir: Path) -> None:
         # Write index.html to output dir
         output_dir.mkdir(exist_ok=True)
         (output_dir/f"{name}.html").write_text(html_str)
+
+
+
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 

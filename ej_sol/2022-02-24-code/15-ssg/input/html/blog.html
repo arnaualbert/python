@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        {% for entry_html, entry_metadata in entry_list %}
+        <!-- {% for entry_html, entry_metadata in entry_list %}
             <h1>{{ entry_metadata.title }}</h1>
 
             <p class="meta">
@@ -23,7 +23,13 @@
             </p>
 
             {{ entry_html|safe|indent(width=12) }}
-        {% endfor %}
+        {% endfor %} -->
+        <h1>{{ title }}</h1>
+
+        <p class="meta">
+            Date:   {{ date }}
+            Author: {{ author }}
+        </p>
         <script src="js/script.js"></script>
     </body>
 
