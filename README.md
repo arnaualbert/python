@@ -311,9 +311,9 @@ rglob lo mira todo subdirectorios incluidos
 siempre que haya un glob/generador/iterador delate un list
 
 libreria : pathlib >>>>>> os
-
+```python
 filepath_list: list[Path] = [path for path in path_list if path.is_file()]
                                  3          1                     2
                         1 para cada ruta en la lista de rutas 2 si es un archivo 3 lo mete en la lista                    
-
+```
 ### - [Ir al índice](#Indice).
