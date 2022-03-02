@@ -306,4 +306,6 @@ para clonar repositorio es : git clone direccion
 
 Para instalar librerias es : conda install -n py39 -c anaconda "nombre libreria"
 
+rglob lo mira todo subdirectorios incluidos 
+
 ### - [Ir al índice](#Indice).
