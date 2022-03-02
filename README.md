@@ -308,4 +308,6 @@ Para instalar librerias es : conda install -n py39 -c anaconda "nombre libreria"
 
 rglob lo mira todo subdirectorios incluidos 
 
+siempre que haya un glob/generador/iterador delate un list
+
 ### - [Ir al índice](#Indice).
