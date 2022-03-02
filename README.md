@@ -316,4 +316,9 @@ filepath_list: list[Path] = [path for path in path_list if path.is_file()]
                                  3          1                     2
                         1 para cada ruta en la lista de rutas 2 si es un archivo 3 lo mete en la lista                    
 ```
+
+sys.argv para ejecutar desde terminal
+
+ejecutar desde terminal : python e3.py 'my data' '*.md'
+
 ### - [Ir al índice](#Indice).
