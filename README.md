@@ -304,4 +304,6 @@ sorted. ordena :  sorted(item_list, key=get_value)
 
 para clonar repositorio es : git clone direccion
 
+Para instalar librerias es : conda install -n py39 -c anaconda "nombre libreria"
+
 ### - [Ir al índice](#Indice).
