@@ -1,2 +1,2 @@
-DEAR {{name}}
+DEAR {{ name }}
 hello welcome to the world
