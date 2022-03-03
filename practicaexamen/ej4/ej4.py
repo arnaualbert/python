@@ -1,26 +1,23 @@
-
-
-
-
+import table
 from pathlib import Path
+import pprint
 
 
-def get_file(csv_file: str) -> str:
-    contents: str = Path("2022-01-20-covid-dades-aga.csv").read_text()
-    stripped_contents: str = contents.strip()
-    return stripped_contents
+covid_table: list[list[str]] = table.read_table("covid-dades-simple.csv")
+    
+    # 2. Build dict using dict comprehension
+header:     list[str]       = covid_table[0]
+covid_dict: dict[str, list] = {column_name: table.get_column(covid_table, column_name)
+                                   for column_name in header}
 
-def get_rows(contents: str) -> list[str]:
-    lines: list[str] = contents.split("\n")
-    return lines
+    # 3. Convert types
+covid_dict['CODI']            = table.convert_type_to_int(covid_dict['CODI'])
+covid_dict['VACUNATS_DOSI_1'] = table.convert_type_to_int(covid_dict['VACUNATS_DOSI_1'])
+covid_dict['VACUNATS_DOSI_2'] = table.convert_type_to_int(covid_dict['VACUNATS_DOSI_2'])
 
+    # 3. Print
+pprint.pp(covid_dict)
 
-def get_columns(rows: list[str]) -> list[list[str]]:
-
-    table = [row.split(";") for row in rows if "BARCELONA" in row]
-
-    return table
-
-def make_dict(table: list[list[str]]):
-
-    for dosis in table:
+    # 4. Usage examples
+print("Total dosi 1:", sum(covid_dict['VACUNATS_DOSI_1']))
+print("Total dosi 2:", sum(covid_dict['VACUNATS_DOSI_2']))
