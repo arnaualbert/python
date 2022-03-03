@@ -10,7 +10,7 @@ def get_txt(txt_file: Path, txt_template: Path):
     names_list: list[str] = inv.split(",")
     for name in names_list:
         tmp_dir: Path = Path(".")
-        var_dict: dict = {"nombre": name}
+        var_dict: dict = {"name": name}
         invitation: str = engine.fill_template(tmp_dir,txt_template,var_dict)
         invitation_new : str = f'{name}.txt'
         ruta_invitation : Path = Path(invitation_new)
