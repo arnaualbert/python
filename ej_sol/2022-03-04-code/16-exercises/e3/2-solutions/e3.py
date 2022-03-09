@@ -145,5 +145,6 @@ if __name__ == "__main__":
     # print_tree_size('my data', '*.md')
     # print_tree_size('my data', '*.*')
     # print_tree_size('../../..', '*.py')
+    # print_tree_size('/', '*')
 
 # -----------------------------------------------------------------------------
