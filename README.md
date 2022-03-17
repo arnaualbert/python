@@ -330,4 +330,6 @@ sys.argv para ejecutar desde terminal
 
 ejecutar desde terminal : python e3.py 'my data' '*.md'
 
+si en un for no vas ha usar una variable se pone barra baja _
+
 ### - [Ir al índice](#Indice).
