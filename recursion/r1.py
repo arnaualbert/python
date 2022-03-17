@@ -20,7 +20,7 @@ def say_hello_v3():
         print("Hello")
 #--------------------------------------------------------------------------------------------------
 def say_hello_v4(num_veces: int):
-    num_veces = num_veces - 1
+    num_veces: int = num_veces - 1
     print("Hello")
     if num_veces > 0:
         say_hello_v4(num_veces)
