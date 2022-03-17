@@ -27,23 +27,33 @@ def say_hello_v4(num_veces: int):
 #--------------------------------------------------------------------------------------------------
 def say_hello_v5(num_veces: int):
     print("Hello")
+    num_veces: int
     if num_veces > 0:
         say_hello_v4(num_veces - 1)
 #--------------------------------------------------------------------------------------------------
-def say_hello_oficial(num: int):
+def say_hello_oficial_v1(num: int):
 
     if (num > 0):
         print("Hello")
-        say_hello_oficial(num - 1)
+        say_hello_oficial_v1(num - 1)
 
     if (num == 0):
         print("Finished!")
+#--------------------------------------------------------------------------------------------------
+def say_hello_oficial_v2(num: int):
+
+    if (num > 0):
+        print("Hello")
+        say_hello_oficial_v2(num - 1)
+
+    if (num <= 0):
+        print("Finished!")        
 #Main
 #--------------------------------------------------------------------------------------------------
 
 # say_hello_v1()
 
-say_hello_oficial(5)
+say_hello_oficial_v2(5)
 
 #--------------------------------------------------------------------------------------------------
 
