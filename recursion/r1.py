@@ -47,7 +47,26 @@ def say_hello_oficial_v2(num: int):
         say_hello_oficial_v2(num - 1)
 
     if (num <= 0):
-        print("Finished!")        
+        print("Finished!")    
+#--------------------------------------------------------------------------------------------------
+# NO TAN RECOMENDABLE
+def say_hello_oficial_v2_2(num: int):
+
+    if (num > 0):
+        print("Hello")
+        say_hello_oficial_v2_2(num - 1)
+
+    else:
+        print("Finished!")    
+#--------------------------------------------------------------------------------------------------
+def say_hello_oficial_v2_3(num: int):
+
+    if (num > 0):
+        print("Hello")
+        say_hello_oficial_v2_3(num - 1)
+
+    elif (num <= 0):
+        pass
 #Main
 #--------------------------------------------------------------------------------------------------
 
