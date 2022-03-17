@@ -67,10 +67,8 @@ def say_hello_oficial_v2_3(num: int):
 
     elif (num <= 0):
         pass
-#Main
+# Main
 #--------------------------------------------------------------------------------------------------
-
-# say_hello_v1()
 
 say_hello_oficial_v2(5)
 
