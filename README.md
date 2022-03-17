@@ -281,6 +281,12 @@ python -m http.server
 
 # Recursion
 
+la recursion es como bucles con funciones
+
+Simula bucles usando solo funciones
+
+La recursividad te permite hacer mas cosas que un bucle (mas potente, mas general)
+
 
 
 # TIPS
