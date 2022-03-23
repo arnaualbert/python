@@ -22,6 +22,8 @@
 
 ## - [Tools](#Tools)
 
+## - [Servidor python](#Servidor-python)
+
 ## - [Recursion](#Recursion)
 
 ## - [Ejecutable python](#Ejecutable-python)
@@ -282,6 +284,8 @@ navegador(firefox, chrome)      ordenador con programas echos a medida
 python -m http.server
 
 127.0.0.1:8000 (direccion propia)
+
+### - [Ir al índice](#Indice).
 
 # Recursion
 
