@@ -301,6 +301,10 @@ se pone el ejecutable en el PATH:
 
 echo $PATH 
 
+echo $PATH | sed 's/:/\n/g'
+
+
+
 # TIPS
 
 F10: ejecuta linea
