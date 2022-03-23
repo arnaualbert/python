@@ -265,7 +265,7 @@ PyLint
 
 ### - [Ir al índice](#Indice).
 
-# Practica
+# Servidor python
 
 SSG STATIC SITE GENERATOR
 
@@ -287,7 +287,11 @@ Simula bucles usando solo funciones
 
 La recursividad te permite hacer mas cosas que un bucle (mas potente, mas general)
 
+# Ejecutable python
 
+se pone "#! /usr/bin/env python3" al principio de el archivo
+
+tambien se le tienen que poner permisos al archivo de ejecucion
 
 # TIPS
 
