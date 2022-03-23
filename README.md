@@ -22,6 +22,10 @@
 
 ## - [Tools](#Tools)
 
+## - [Recursion](#Recursion)
+
+## - [Ejecutable python](#Ejecutable-python)
+
 ## - [TIPS](#TIPS)
 
 # Brackets
@@ -287,6 +291,8 @@ Simula bucles usando solo funciones
 
 La recursividad te permite hacer mas cosas que un bucle (mas potente, mas general)
 
+### - [Ir al índice](#Indice).
+
 # Ejecutable python
 
 se pone "#! /usr/bin/env python3" al principio de el archivo
@@ -308,6 +314,8 @@ PATH=~/bin:$PATH
 nano ~/.profile
 
 cp hola.py ~/bin/hola
+
+### - [Ir al índice](#Indice).
 
 # TIPS
 
