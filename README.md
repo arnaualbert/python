@@ -305,7 +305,7 @@ echo $PATH | sed 's/:/\n/g'
 
 PATH=~/bin:$PATH
 
-
+nano ~/.profile
 
 # TIPS
 
