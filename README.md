@@ -297,7 +297,7 @@ chmod u+x nombre_archivo.py #solo para mi
 
 chmod a+x nombre_archivo.py #para todos
 
-tambien 
+se pone el ejecutable en el path
 
 # TIPS
 
