@@ -364,4 +364,6 @@ ejecutar desde terminal : python e3.py 'my data' '*.md'
 
 si en un for no vas ha usar una variable se pone barra baja _
 
+hay una libreria menos compleja para sys.argv que se llama argparse
+
 ### - [Ir al índice](#Indice).
