@@ -291,7 +291,13 @@ La recursividad te permite hacer mas cosas que un bucle (mas potente, mas genera
 
 se pone "#! /usr/bin/env python3" al principio de el archivo
 
-tambien se le tienen que poner permisos al archivo de ejecucion
+tambien se le tienen que poner permisos al archivo de ejecucion:
+
+chmod u+x nombre_archivo.py #solo para mi
+
+chmod a+x nombre_archivo.py #para todos
+
+tambien 
 
 # TIPS
 
