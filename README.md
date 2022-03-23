@@ -307,6 +307,8 @@ PATH=~/bin:$PATH
 
 nano ~/.profile
 
+cp hola.py ~/bin/hola
+
 # TIPS
 
 F10: ejecuta linea
