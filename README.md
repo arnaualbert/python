@@ -303,6 +303,8 @@ echo $PATH
 
 echo $PATH | sed 's/:/\n/g'
 
+PATH=~/bin:$PATH
+
 
 
 # TIPS
