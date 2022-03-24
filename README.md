@@ -325,6 +325,12 @@ cp hola.py ~/bin/hola
 
 Progamacion oientada a objetos
 
+OOP es el paradigma de programacion mas extendido hoy en dia
+
+Paradigmas de programacion : un paradigma es un conjunto de ideas
+
+El paradigma mas basico es el procedural "procedimientos" "funciones"
+
 ### - [Ir al índice](#Indice).
 
 # TIPS
