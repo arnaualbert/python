@@ -331,6 +331,10 @@ Paradigmas de programacion : un paradigma es un conjunto de ideas
 
 El paradigma mas basico es el procedural "procedimientos" "funciones"
 
+El mas popular es el funcional
+
+Tambien existe la programacion logica , ...
+
 ### - [Ir al índice](#Indice).
 
 # TIPS
