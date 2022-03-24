@@ -321,6 +321,10 @@ cp hola.py ~/bin/hola
 
 ### - [Ir al índice](#Indice).
 
+# OOP
+
+### - [Ir al índice](#Indice).
+
 # TIPS
 
 F10: ejecuta linea
