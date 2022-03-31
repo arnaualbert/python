@@ -56,11 +56,11 @@ Funcion pura
 
 3 Para los mismos parametros de entrada siempre devuelve los mismos parametros de salida
 
-Classe = Tipo
+Classe = Tipo (int,bool,float)
 
-Objeto = Variable
+Objeto = Variable (entrada en la tabla de simbolos)
 
-Metodo = Funcion 
+Metodo = Funcion (funcion asociada a un objeto)
 
 sorted es una funcion pura
 
@@ -339,7 +339,17 @@ Object = DATA +FUNCTIONS
 
 Python OOP (Java,C++,C#)
 
+```python
+# Clases empiezan en mayusculas
+class Bad_example():
+    pass
 
+# Las clases tienen un constructor
+class Dog():
+    def __init__(self) -> None:
+       #^^^^^^^^: esto es un constructor
+        pass
+```
 
 ### - [Ir al índice](#Indice).
 
