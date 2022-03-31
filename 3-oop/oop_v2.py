@@ -24,7 +24,11 @@ class Dog():
         self.name = name
         self.age = age
 
+    def greet(self):
+        print(f"Hello i'm {self.name}")
 #----------------------------------------------------
-firulas: Dog = Dog("firulais",3)
-print(firulas.name)
-print(firulas.age)
+
+firulais: Dog = Dog("firulais",3)
+dama: Dog = Dog("dama",5)
+firulais.greet()
+dama.greet()
