@@ -341,6 +341,8 @@ Object = DATA +FUNCTIONS
 
 Python OOP (Java,C++,C#)
 
+se crean objetos cuando se tiene una idea que necesita datos y funciones y sea muy estable
+
 ```python
 # Clases empiezan en mayusculas
 class Bad_example():

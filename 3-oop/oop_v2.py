@@ -32,3 +32,6 @@ firulais: Dog = Dog("firulais",3)
 dama: Dog = Dog("dama",5)
 firulais.greet()
 dama.greet()
+
+#----------------------------------------------------
+
