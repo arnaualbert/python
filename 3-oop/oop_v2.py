@@ -37,17 +37,17 @@ dama.greet()
 
 class Table():
     
-    def __init__(self,table):
-        self.table = table
+    def __init__(self,csv_file_path):
+        self.data = self.read_csv(csv_file_path)
     
     def read_csv(self,csv_file_path: str) -> str:
     # '''Input:  The path to a .csv file.
     #   Output: The contents of the .csv file as a single string.'''
 
-    raw_text:      str = Path(csv_file_path).read_text()
-    stripped_text: str = raw_text.strip()
+        raw_text:      str = Path(csv_file_path).read_text()
+        stripped_text: str = raw_text.strip()
 
-    return stripped_text
+        return stripped_text
 
 
     # 2. Separate by rows
@@ -77,9 +77,9 @@ class Table():
         '''Input:  Path of a .csv file.
         Output: Table as a list of lists of strings with the csv contents.'''
 
-        csv_str: str             = read_csv(csv_file_path)
-        rows:    list[str]       = separate_by_rows(csv_str)
-        table:   list[list[str]] = separate_by_columns(rows)
+        csv_str: str             = self.read_csv(csv_file_path)
+        rows:    list[str]       = self.separate_by_rows(csv_str)
+        table:   list[list[str]] = self.separate_by_columns(rows)
 
         return table
 
