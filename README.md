@@ -28,6 +28,8 @@
 
 ## - [Ejecutable python](#Ejecutable-python)
 
+## - [OOP](#OOP)
+
 ## - [TIPS](#TIPS)
 
 # Brackets

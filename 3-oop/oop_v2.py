@@ -3,7 +3,7 @@ Object oriented programing
 '''
 
 # Clases empiezan en mayusculas
-class Bad_example():
+class BadExample():
     pass
 
 # Las clases tienen un constructor
