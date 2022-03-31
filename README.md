@@ -345,7 +345,7 @@ Se crean objetos cuando se tiene una idea que necesita datos y funciones y sea m
 
 ```python
 # Clases empiezan en mayusculas
-class Bad_example():
+class BadExample():
     pass
 
 # Las clases tienen un constructor
