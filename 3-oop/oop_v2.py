@@ -28,17 +28,18 @@ class Dog():
         print(f"Hello i'm {self.name}")
 #----------------------------------------------------
 
-firulais: Dog = Dog("firulais",3)
-dama: Dog = Dog("dama",5)
-firulais.greet()
-dama.greet()
+# firulais: Dog = Dog("firulais",3)
+# dama: Dog = Dog("dama",5)
+# firulais.greet()
+# dama.greet()
 
 #----------------------------------------------------
 
 class Table():
     
     def __init__(self,csv_file_path):
-        self.data = self.read_csv(csv_file_path)
+
+        self.data:list[list[str]] = self.read_csv(csv_file_path)#esto es lo que se guarda el objeto
     
     def read_csv(self,csv_file_path: str) -> str:
     # '''Input:  The path to a .csv file.
@@ -85,16 +86,16 @@ class Table():
 
 
     # -----------------------------------------------------------------------------
-    def filter_rows(self,table: list[list[str]], column_name: str, search_str: str) -> list[list[str]]:
+    def filter_rows(self,column_name: str, search_str: str) -> list[list[str]]:
         '''Input:  Table, columne and search string to filter by. 
         Output: Returns table with rows whose column_name includes search_str. Includes the header.'''
 
         # Precondition: There is at least a header in the table
-        assert len(table) >= 1
+        assert len(self.data) >= 1
 
         # Get the header and data body
-        header: list[str]       = table[0]
-        data:   list[list[str]] = table[1:]
+        header: list[str]       = self.data[0]
+        data:   list[list[str]] = self.data[1:]
 
         # Precondition: column_name is in the header
         assert column_name in header
@@ -114,16 +115,16 @@ class Table():
 
 
     # -----------------------------------------------------------------------------
-    def get_column(self,table: list[list[str]], column_name: str) -> list[str]:
+    def get_column(self,column_name: str) -> list[str]:
         '''Input:  Column name as a string and Table as a list of lists of strings.
         Output: The column whose name is column_name WITHOUT the header.'''
 
         # Precondition: There is at least a header in the table
-        assert len(table) >= 1
+        assert len(self.data) >= 1
 
         # Get the header and data body
-        header: list[str]       = table[0]
-        data:   list[list[str]] = table[1:]
+        header: list[str]       = self.data[0]
+        data:   list[list[str]] = self.data[1:]
 
         # Precondition: column_name is in the header
         assert column_name in header
@@ -150,4 +151,6 @@ class Table():
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 
-    tabla: Table  = Table()   
+    tabla: Table  = Table('covid-dades-simple.csv')   
+    # tabla.get_column(tabla.data,'Nom')
+    tabla.get_column('Nom')
