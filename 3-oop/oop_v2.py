@@ -111,7 +111,8 @@ class Table():
         # Add header to result
         result: list[list[str]] = [header] + filtered_data
 
-        return result
+        self.data = result
+
 
 
     # -----------------------------------------------------------------------------
@@ -151,6 +152,5 @@ class Table():
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 
-    tabla: Table  = Table('covid-dades-simple.csv')   
-    # tabla.get_column(tabla.data,'Nom')
-    tabla.get_column('Nom')
+    tabla = Table('covid-dades-simple.csv')   
+    filter = tabla.filter_rows('NOM','ALT CAMP I CONCA DE BARBERÀ')
