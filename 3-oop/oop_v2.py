@@ -145,3 +145,9 @@ class Table():
         result: list[int] = [int(elem) for elem in input_list]
 
         return result
+
+# Main
+# -----------------------------------------------------------------------------
+if __name__ == "__main__":
+
+    tabla: Table  = Table()   
