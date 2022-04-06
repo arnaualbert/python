@@ -1,49 +1,32 @@
 '''
 Object oriented programing
 '''
+import sys
+import pprint
 from pathlib import Path
-# Clases empiezan en mayusculas
 
-class BadExample():
-    pass
+"""
+- This is a copy of tables/2022-01-20-covid-dades/main_v6_comprehensions.py
+- I added a conditional at the end 'if __name__ == "__main__"'
+  in order to be able to import it from other python files.
+"""
 
-# Las clases tienen un constructor
-#on definition we write __init__ ()
-#on callinf we called Dog
-#methods :
-#all methods have a special parameter: self
-#when calling the method we don't write it
-#attributes:
-#attributes are variables stores inside the objects
-#they are created by the constructor 
-#to access them write self.<attribute>
-#-----------------------------------------------------
-class Dog():
+# -----------------------------------------------------------------------------
+class Table:
 
-    def __init__(self, name: str, age: int):
-        self.name = name
-        self.age = age
+    # Constructor
+    def __init__(self, csv_file_path: str):
 
-    def greet(self):
-        print(f"Hello i'm {self.name}")
-#----------------------------------------------------
+        self.data: list[list[str]] = self.read_table(csv_file_path)
 
-# firulais: Dog = Dog("firulais",3)
-# dama: Dog = Dog("dama",5)
-# firulais.greet()
-# dama.greet()
+    def __str__(self) -> str:
+        return str(self.data)
 
-#----------------------------------------------------
-
-class Table():
-    
-    def __init__(self,csv_file_path):
-
-        self.data:list[list[str]] = self.read_csv(csv_file_path)#esto es lo que se guarda el objeto
-    
-    def read_csv(self,csv_file_path: str) -> str:
-    # '''Input:  The path to a .csv file.
-    #   Output: The contents of the .csv file as a single string.'''
+    # 1. Read csv file
+    # -----------------------------------------------------------------------------
+    def read_csv(self, csv_file_path: str) -> str:
+        '''Input:  The path to a .csv file.
+        Output: The contents of the .csv file as a single string.'''
 
         raw_text:      str = Path(csv_file_path).read_text()
         stripped_text: str = raw_text.strip()
@@ -53,7 +36,7 @@ class Table():
 
     # 2. Separate by rows
     # -----------------------------------------------------------------------------
-    def separate_by_rows(self,contents: str) -> list[str]:
+    def separate_by_rows(self, contents: str) -> list[str]:
         '''Input:  The file contents as a single string.
             Output: A list of strings where each string is a row of the csv file.'''
         
@@ -64,7 +47,7 @@ class Table():
 
     # 3. Separate by columns
     # -----------------------------------------------------------------------------
-    def separate_by_columns(self,rows: list[str]) -> list[list[str]]:
+    def separate_by_columns(self, rows: list[str]) -> list[list[str]]:
         '''Input:  A list of strings. Each string is a row of a csv file. Row fields are separated by ";".
             Output: A table where each row has been splitted into a list of fields.'''
 
@@ -74,7 +57,7 @@ class Table():
 
 
     # -----------------------------------------------------------------------------
-    def read_table(self,csv_file_path: str) -> list[list[str]]:
+    def read_table(self, csv_file_path: str) -> list[list[str]]:
         '''Input:  Path of a .csv file.
         Output: Table as a list of lists of strings with the csv contents.'''
 
@@ -86,7 +69,7 @@ class Table():
 
 
     # -----------------------------------------------------------------------------
-    def filter_rows(self,column_name: str, search_str: str) -> list[list[str]]:
+    def filter_rows(self, column_name: str, search_str: str):
         '''Input:  Table, columne and search string to filter by. 
         Output: Returns table with rows whose column_name includes search_str. Includes the header.'''
 
@@ -95,7 +78,7 @@ class Table():
 
         # Get the header and data body
         header: list[str]       = self.data[0]
-        data:   list[list[str]] = self.data[1:]
+        body:   list[list[str]] = self.data[1:]
 
         # Precondition: column_name is in the header
         assert column_name in header
@@ -105,18 +88,18 @@ class Table():
 
         # Filter rows
         filtered_data: list[list[str]] = [row
-                                        for row in data
+                                        for row in body
                                         if (search_str in row[column_index]) ]
 
         # Add header to result
         result: list[list[str]] = [header] + filtered_data
 
+        # Store the data inside the object
         self.data = result
 
 
-
     # -----------------------------------------------------------------------------
-    def get_column(self,column_name: str) -> list[str]:
+    def get_column(self, column_name: str) -> list[str]:
         '''Input:  Column name as a string and Table as a list of lists of strings.
         Output: The column whose name is column_name WITHOUT the header.'''
 
@@ -125,7 +108,7 @@ class Table():
 
         # Get the header and data body
         header: list[str]       = self.data[0]
-        data:   list[list[str]] = self.data[1:]
+        body:   list[list[str]] = self.data[1:]
 
         # Precondition: column_name is in the header
         assert column_name in header
@@ -134,23 +117,51 @@ class Table():
         column_index: int = header.index(column_name)
 
         # Return column
-        result: list[str] = [row[column_index] for row in data]
+        result: list[str] = [row[column_index] for row in body]
 
         return result
 
 
-    # -----------------------------------------------------------------------------
-    def convert_type_to_int(self,input_list: list) -> list[int]:
-        '''Input:  A list of a certain type.
-        Output: The list with all elements converted to new_type.'''
+# PENDING TO MOVE SOMEWHERE ELSE...
+# -----------------------------------------------------------------------------
+def convert_type_to_int(input_list: list) -> list[int]:
+    '''Input:  A list of a certain type.
+    Output: The list with all elements converted to new_type.'''
 
-        result: list[int] = [int(elem) for elem in input_list]
+    result: list[int] = [int(elem) for elem in input_list]
 
-        return result
+    return result
+
 
 # Main
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 
-    tabla = Table('covid-dades-simple.csv')   
-    filter = tabla.filter_rows('NOM','ALT CAMP I CONCA DE BARBERÀ')
+    table: Table = Table("covid-dades-simple.csv")
+    table.filter_rows('NOM', 'ALT CAMP I CONCA DE BARBERÀ')
+
+    dosi2_column_str: list[str] = table.get_column('VACUNATS_DOSI_2')
+    dosi2_column_int: list[int] = convert_type_to_int(dosi2_column_str)
+    print(dosi2_column_int)
+
+    print(table)
+
+    sys.exit()
+
+    # table:     list[list[str]] = read_table("covid-dades-simple.csv")
+    # bcn_table: list[list[str]] = filter_rows(table, 'NOM', 'ALT CAMP I CONCA DE BARBERÀ')
+
+    # dosi1_str_list: list[str]  = get_column(bcn_table, 'VACUNATS_DOSI_1')
+    # dosi1_int_list: list[int]  = convert_type_to_int(dosi1_str_list)
+    # dosi2_str_list: list[str]  = get_column(bcn_table, 'VACUNATS_DOSI_2')
+    # dosi2_int_list: list[int]  = convert_type_to_int(dosi2_str_list)
+
+    # dosi1_total: int = sum(dosi1_int_list)
+    # dosi2_total: int = sum(dosi2_int_list)
+
+    # print(set(get_column(bcn_table, 'NOM')))
+
+    # print(f"Total de dosi 1: {dosi1_total}")
+    # print(f"Total de dosi 2: {dosi2_total}")
+
+# -----------------------------------------------------------------------------
