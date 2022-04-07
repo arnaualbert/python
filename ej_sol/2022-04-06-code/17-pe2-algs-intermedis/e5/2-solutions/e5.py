@@ -63,7 +63,7 @@ def make_mutation(seq: str, mutation_index: int) -> dict[str, str]:
 
     # 2. Prepare mutation candidates
     old_letter:                 str  = seq[mutation_index]
-    candidate_letter_set:   set[str] = {'A', 'T', 'C', 'G'} - {old_letter} # set literal no es un diccionario
+    candidate_letter_set:   set[str] = {'A', 'T', 'C', 'G'} - {old_letter}
     candidate_letter_list: list[str] = list(candidate_letter_set)
 
     # 3. Build mutation parts
