@@ -4,12 +4,15 @@ Object oriented programing
 import sys
 import pprint
 from pathlib import Path
+from typing import List
 
 """
 - This is a copy of tables/2022-01-20-covid-dades/main_v6_comprehensions.py
 - I added a conditional at the end 'if __name__ == "__main__"'
   in order to be able to import it from other python files.
 """
+
+# classmethod : 
 
 # -----------------------------------------------------------------------------
 class Table:
@@ -20,6 +23,9 @@ class Table:
         self.data: list[list[str]] = self.read_table(csv_file_path)
 
     @classmethod
+    def admit_list(cls,lista_de_listas: list[list]):
+        
+        return cls(lista)
 
     def __str__(self) -> str:
         # return str(self.data)
@@ -28,7 +34,7 @@ class Table:
             row_str: str= " ".join(row)
             result = result + f"{row_str}\n"
 
-
+        return result
 
     # 1. Read csv file
     # -----------------------------------------------------------------------------
