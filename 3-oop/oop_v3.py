@@ -113,7 +113,7 @@ class Table:
 
 
     # -----------------------------------------------------------------------------
-    def get_column(self, column_name: str) -> list[str]:
+    def get_column(self, column_name: str) -> list[str]: 
         '''Input:  Column name as a string and Table as a list of lists of strings.
         Output: The column whose name is column_name WITHOUT the header.'''
 
