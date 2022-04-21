@@ -18,14 +18,14 @@ from typing import List
 class Table:
 
     # Constructor
-    def __init__(self, csv_file_path: str):
+    def __init__(self,lista_de_listas: list[list]):
 
-        self.data: list[list[str]] = self.read_table(csv_file_path)
+        self.data: list[list] = lista_de_listas
 
     @classmethod
-    def admit_list(cls,lista_de_listas: list[list]):
+    def admit_list(cls,csv_file_path: str):
+        cls.data: list[list[str]] = cls.read_table(csv_file_path)
         
-        return cls(lista)
 
     def __str__(self) -> str:
         # return str(self.data)
