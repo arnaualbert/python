@@ -148,7 +148,7 @@ def convert_type_to_int(input_list: list) -> list[int]:
 
 
 class Series:
-    def __init__(self,lista) -> None:
+    def __init__(self,lista):
         self.data = lista
     
     def __str__(self) -> str:
