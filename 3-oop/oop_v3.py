@@ -147,19 +147,36 @@ def convert_type_to_int(input_list: list) -> list[int]:
     return result
 
 
+class Series:
+    def __init__(self,lista) -> None:
+        self.data = lista
+    
+    def __str__(self) -> str:
+        result: str = ""
+        for row in self.data:
+            # row_str: str= " ".join(row)
+            result = result + f"{row}\n"
+
+        return result
+
+
+
+
 # Main
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 
-    table: Table = Table("covid-dades-simple.csv")
-    table.filter_rows('NOM', 'ALT CAMP I CONCA DE BARBERÀ')
+    # table: Table = Table("covid-dades-simple.csv")
+    # table.filter_rows('NOM', 'ALT CAMP I CONCA DE BARBERÀ')
 
-    dosi2_column_str: list[str] = table.get_column('VACUNATS_DOSI_2')
-    dosi2_column_int: list[int] = convert_type_to_int(dosi2_column_str)
-    print(dosi2_column_int)
+    # dosi2_column_str: list[str] = table.get_column('VACUNATS_DOSI_2')
+    # dosi2_column_int: list[int] = convert_type_to_int(dosi2_column_str)
+    # print(dosi2_column_int)
 
-    print(table)
+    # print(table)
 
+    lista = Series(["hola","adios","arnau"])
+    print(lista)
     sys.exit()
 
     # table:     list[list[str]] = read_table("covid-dades-simple.csv")
