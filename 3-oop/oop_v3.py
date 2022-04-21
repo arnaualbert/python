@@ -83,7 +83,7 @@ class Table:
 
 
     # -----------------------------------------------------------------------------
-    def filter_rows(self, column_name: str, search_str: str):
+    def filter_rows(self, column_name: str, search_str: str): #este
         '''Input:  Table, columne and search string to filter by. 
         Output: Returns table with rows whose column_name includes search_str. Includes the header.'''
 
@@ -113,7 +113,7 @@ class Table:
 
 
     # -----------------------------------------------------------------------------
-    def get_column(self, column_name: str) -> list[str]: 
+    def get_column(self, column_name: str) -> list[str]: # este
         '''Input:  Column name as a string and Table as a list of lists of strings.
         Output: The column whose name is column_name WITHOUT the header.'''
 
@@ -138,7 +138,7 @@ class Table:
 
 # PENDING TO MOVE SOMEWHERE ELSE...
 # -----------------------------------------------------------------------------
-def convert_type_to_int(input_list: list) -> list[int]:
+def convert_type_to_int(input_list: list) -> list[int]: # este
     '''Input:  A list of a certain type.
     Output: The list with all elements converted to new_type.'''
 
