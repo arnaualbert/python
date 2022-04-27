@@ -1,5 +1,6 @@
 from collections import OrderedDict
 
+# Class
 # ---------------------------------------------------------------------------------------------------------------------
 class Dog:
 
@@ -11,6 +12,8 @@ class Dog:
     
     def __str__(self) -> str:
         return f"{self.name} is a {Dog.species} is {self.age} years old"
+
+# class 
 
 # Functions outside oF dog class
 # ----------------------------------------------------------------------------------------------------------------------
