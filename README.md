@@ -337,7 +337,7 @@ El mas popular es el funcional
 
 Tambien existe la programacion logica , ...
 
-Object = DATA +FUNCTIONS
+Object = DATA + FUNCTIONS
 
 Python OOP (Java,C++,C#)
 
