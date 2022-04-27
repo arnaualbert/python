@@ -5,8 +5,8 @@
 # ---------------------------------------------------------------------------------------------------------------------
 class Dog:
 
-    species: str = "Especie"
-    
+    species: str = "Canis lupus familiaris "
+
     def __init__(self, name: str, age: int):
         self.name: str = name
         self.age : int = age
@@ -17,7 +17,7 @@ class Dog:
 
 # Main
 # ----------------------------------------------------------------------------------------------------------------------
-if __name__ == "main":
+if __name__ == "__main__":
 
     sarah : Dog = Dog("sarah",4)
     james: Dog = Dog("James",3)
