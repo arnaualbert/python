@@ -52,5 +52,8 @@ if __name__ == "__main__":
     show_attributes(Dog)
 
     # instances can acces class attributes
-
+    # if an ttributes is not found in an instance
+    # python automatically searches it in the class.
     print(sarah.species)
+
+    sarah.species = "canis lupus signatus"
