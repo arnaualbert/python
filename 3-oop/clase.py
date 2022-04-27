@@ -10,7 +10,7 @@ class Dog:
         self.age : int = age
     
     def __str__(self) -> str:
-        return f"{self.name} is: {self.age} years old"
+        return f"{self.name} is: a {Dog.species} is {self.age} years old"
 
 # Functions outside oF dog class
 # ----------------------------------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ def show_attributes(something):
 # ----------------------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":
 
-    sarah : Dog = Dog("sarah",4)
+    sarah : Dog = Dog("Sarah",4)
     james: Dog = Dog("James",3)
 
     print(sarah, james,sep="\n")
@@ -36,4 +36,14 @@ if __name__ == "__main__":
     show_attributes(sarah)
     show_attributes(james)
     show_attributes(Dog)
+
+    # podemos acceder a los atributos de classe e instancia desde fuera
+
+    # print(james.name)
+
+    # podemos cambiar atributos de instancia
+    sarah.name = "sara connor"
+
+    # se pueden canbiar atributos de clase
+    Dog.species = "Cannid lupus lupus"
     # show(Dog)
