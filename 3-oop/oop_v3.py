@@ -18,14 +18,13 @@ from typing import List
 class Table:
 
     # Constructor
-    def __init__(self,lista_de_listas: list[list]):
+    def __init__(self, csv_file_path: str):
 
-        self.data: list[list] = lista_de_listas
+        self.data: list[list[str]] = self.read_table(csv_file_path)
 
     @classmethod
-    def admit_list(cls,csv_file_path: str):
-        cls.data: list[list[str]] = cls.read_table(csv_file_path)
-        
+    def admit_list(cls,lista_de_listas: list[list]):
+        cls.something = lista_de_listas
 
     def __str__(self) -> str:
         # return str(self.data)
@@ -83,7 +82,7 @@ class Table:
 
 
     # -----------------------------------------------------------------------------
-    def filter_rows(self, column_name: str, search_str: str): #este
+    def filter_rows(self, column_name: str, search_str: str):
         '''Input:  Table, columne and search string to filter by. 
         Output: Returns table with rows whose column_name includes search_str. Includes the header.'''
 
@@ -113,7 +112,7 @@ class Table:
 
 
     # -----------------------------------------------------------------------------
-    def get_column(self, column_name: str) -> list[str]: # este
+    def get_column(self, column_name: str) -> list[str]:
         '''Input:  Column name as a string and Table as a list of lists of strings.
         Output: The column whose name is column_name WITHOUT the header.'''
 
@@ -138,7 +137,7 @@ class Table:
 
 # PENDING TO MOVE SOMEWHERE ELSE...
 # -----------------------------------------------------------------------------
-def convert_type_to_int(input_list: list) -> list[int]: # este
+def convert_type_to_int(input_list: list) -> list[int]:
     '''Input:  A list of a certain type.
     Output: The list with all elements converted to new_type.'''
 
@@ -147,36 +146,19 @@ def convert_type_to_int(input_list: list) -> list[int]: # este
     return result
 
 
-class Series:
-    def __init__(self,lista):
-        self.data = lista
-    
-    def __str__(self) -> str:
-        result: str = ""
-        for row in self.data:
-            # row_str: str= " ".join(row)
-            result = result + f"{row}\n"
-
-        return result
-
-
-
-
 # Main
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 
-    # table: Table = Table("covid-dades-simple.csv")
-    # table.filter_rows('NOM', 'ALT CAMP I CONCA DE BARBERÀ')
+    table: Table = Table("covid-dades-simple.csv")
+    table.filter_rows('NOM', 'ALT CAMP I CONCA DE BARBERÀ')
 
-    # dosi2_column_str: list[str] = table.get_column('VACUNATS_DOSI_2')
-    # dosi2_column_int: list[int] = convert_type_to_int(dosi2_column_str)
-    # print(dosi2_column_int)
+    dosi2_column_str: list[str] = table.get_column('VACUNATS_DOSI_2')
+    dosi2_column_int: list[int] = convert_type_to_int(dosi2_column_str)
+    print(dosi2_column_int)
 
-    # print(table)
+    print(table)
 
-    lista = Series(["hola","adios","arnau"])
-    print(lista)
     sys.exit()
 
     # table:     list[list[str]] = read_table("covid-dades-simple.csv")
