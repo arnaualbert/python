@@ -14,6 +14,13 @@ class Dog:
     def __str__(self) -> str:
         return f"{self.name} is: {self.age} years old"
 
+# Functions outside oF dog class
+# ----------------------------------------------------------------------------------------------------------------------
+def show(something):
+
+    print(something.__dict__)
+
+
 
 # Main
 # ----------------------------------------------------------------------------------------------------------------------
@@ -23,3 +30,5 @@ if __name__ == "__main__":
     james: Dog = Dog("James",3)
     print(sarah, james, sep="\n")
 
+    show(sarah)
+    show(james)
