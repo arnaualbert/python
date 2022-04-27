@@ -10,7 +10,7 @@ class Dog:
         self.age : int = age
     
     def __str__(self) -> str:
-        return f"{self.name} is: a {Dog.species} is {self.age} years old"
+        return f"{self.name} is a {Dog.species} is {self.age} years old"
 
 # Functions outside oF dog class
 # ----------------------------------------------------------------------------------------------------------------------
