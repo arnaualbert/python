@@ -46,4 +46,11 @@ if __name__ == "__main__":
 
     # se pueden canbiar atributos de clase
     Dog.species = "Cannid lupus lupus"
-    # show(Dog)
+    print(sarah, james,sep="\n")
+    show_attributes(sarah)
+    show_attributes(james)
+    show_attributes(Dog)
+
+    # instances can acces class attributes
+
+    print(sarah.species)
