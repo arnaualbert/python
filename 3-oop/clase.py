@@ -45,7 +45,7 @@ if __name__ == "__main__":
     sarah.name = "sara connor"
 
     # se pueden canbiar atributos de clase
-    Dog.species = "Cannid lupus lupus"
+    Dog.species = "Cannis lupus lupus"
     print(sarah, james,sep="\n")
     show_attributes(sarah)
     show_attributes(james)
@@ -57,3 +57,7 @@ if __name__ == "__main__":
     print(sarah.species)
 
     sarah.species = "canis lupus signatus"
+
+    show_attributes(sarah)
+    show_attributes(james)
+    show_attributes(Dog)
