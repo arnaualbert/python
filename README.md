@@ -343,6 +343,10 @@ Python OOP (Java,C++,C#)
 
 Se crean objetos cuando se tiene una idea que necesita datos y funciones y sea muy estable
 
+Los objetos tiene instance atribbute, son los que se ponen en self
+
+tiene metodos de instancia (se sabe porque recibe el parametro self)
+
 ```python
 # Clases empiezan en mayusculas
 class BadExample():
