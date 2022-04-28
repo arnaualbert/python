@@ -27,4 +27,8 @@ class Arctos(CanisLupus):
 
 # modulo
 if __name__ == "__main__":
+
     cani = CanisLupus("CANI",4)
+    anya = Arctos("anay", 4)
+
+    print(anya)
