@@ -24,7 +24,26 @@ class Arctos(CanisLupus):
         self.favorite_food = "polar bear barbacue"
         self.species = "canis lupus arctos"
 
+class Baileyi(CanisLupus):
 
+    def __init__(self, name: str, age: int):
+
+        super().__init__(name, age)
+
+        self.greeting = "soy un lobo mexicano"
+        self.favorite_food = "burritos"
+        self.species = "canis lupus baileyi"
+        
+
+class Signatus(CanisLupus):
+
+    def __init__(self, name: str, age: int):
+
+        super().__init__(name, age)
+
+        self.greeting = "soy un lobo iberico"
+        self.favorite_food = "paella"
+        self.species = "canis lupus signatus"
     
 # Functions outside of dog class
 # ----------------------------------------------------------------------------------------------------------------------
@@ -43,9 +62,14 @@ if __name__ == "__main__":
 
     cani = CanisLupus("CANI",4)
     anya = Arctos("anay", 4)
+    miguel = Baileyi("miguel",4)
+    rafa = Signatus("rafa",4)
+
 
     print(cani)
     print(anya)
+    print(miguel)
+    print(rafa)
 
-    show_attributes(cani)
-    show_attributes(anya)
+    # show_attributes(cani)
+    # show_attributes(anya)
