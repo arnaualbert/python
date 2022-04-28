@@ -33,7 +33,7 @@ class Baileyi(CanisLupus):
         self.greeting = "soy un lobo mexicano"
         self.favorite_food = "burritos"
         self.species = "canis lupus baileyi"
-        
+                                
 
 class Signatus(CanisLupus):
 
