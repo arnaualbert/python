@@ -5,7 +5,7 @@ class CanisLupus:
         self.name = name
         self.age = age  
         self.greeting = "i'm a wolf"
-        self.favorite_food = "barbacue"
+        self.favorite_food = "meat"
         self.species = "canis lupus"  
     
     def __str__(self) -> str:
@@ -19,7 +19,7 @@ class Arctos(CanisLupus):
     def __init__(self, name: str, age: int):
 
         super().__init__(name, age)
-        
+
         self.greeting = "i'm a cool wolf"
         self.favorite_food = "polar bear barbacue"
         self.species = "canis lupus arctos"
