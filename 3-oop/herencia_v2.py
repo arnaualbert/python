@@ -54,8 +54,8 @@ class Signatus(CanisLupus):
 
 class SignatusSiestus(Signatus):
 
-    def __init__(self, name: str, age: int):
-        pass
+    def __init__(self,ronquido):
+        self.ronquido = "hghghghgh"
 
         # self.greeting = "soy un lobo iberico"
         # self.favorite_food = "paella"
