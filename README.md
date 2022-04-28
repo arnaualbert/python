@@ -359,6 +359,10 @@ class Dog():
         pass
 ```
 
+la herencia es un metodo para no repetir codigo
+
+
+
 ### - [Ir al índice](#Indice).
 
 # TIPS
