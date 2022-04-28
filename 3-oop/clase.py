@@ -59,7 +59,7 @@ if __name__ == "__main__":
     # python automatically searches it in the class.
     print(sarah.species)
 
-    sarah.species = "canis lupus signatus"
+    sarah.species = "canis lupus signatus" # se le añade un nuevo atributo, si como en este caso .species ya existe es un unshadow
 
     show_attributes(sarah)
     show_attributes(james)
