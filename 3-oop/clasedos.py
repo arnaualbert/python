@@ -6,5 +6,8 @@ class Arctos:
         self.favorite_food = "barbacoa"
         self.species = "canis lupus arctos"
     def __str__(self) -> str:
-        return f"hello my name is {self.name} i'm {self.age} yo, my favorite food is {self.favorite_food} and i'm a {self.species}"
+        introduction = f"my name is {self.name}, i'm a {self.species} and i'm {self.age}yo"
+        closing = f"i love {self.favorite_food} and {self.greeting}"
+        
+        return f" {introduction}\n{closing}"
     
