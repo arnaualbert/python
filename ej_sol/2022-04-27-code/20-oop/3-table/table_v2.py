@@ -1,10 +1,7 @@
-import sys
 from pathlib import Path
 
 """
-- This is a copy of tables/2022-01-20-covid-dades/main_v6_comprehensions.py
-- I added a conditional at the end 'if __name__ == "__main__"'
-  in order to be able to import it from other python files.
+- Table class v2. All functions converted to methods.
 """
 
 # -----------------------------------------------------------------------------
@@ -131,23 +128,5 @@ class Table:
 if __name__ == "__main__":
 
     table: Table = Table("covid-dades-simple.csv")
-
-    sys.exit()
-
-    table:     list[list[str]] = read_table("covid-dades-simple.csv")
-    bcn_table: list[list[str]] = filter_rows(table, 'NOM', 'ALT CAMP I CONCA DE BARBERÀ')
-
-    dosi1_str_list: list[str]  = get_column(bcn_table, 'VACUNATS_DOSI_1')
-    dosi1_int_list: list[int]  = convert_type_to_int(dosi1_str_list)
-    dosi2_str_list: list[str]  = get_column(bcn_table, 'VACUNATS_DOSI_2')
-    dosi2_int_list: list[int]  = convert_type_to_int(dosi2_str_list)
-
-    dosi1_total: int = sum(dosi1_int_list)
-    dosi2_total: int = sum(dosi2_int_list)
-
-    print(set(get_column(bcn_table, 'NOM')))
-
-    print(f"Total de dosi 1: {dosi1_total}")
-    print(f"Total de dosi 2: {dosi2_total}")
 
 # -----------------------------------------------------------------------------
