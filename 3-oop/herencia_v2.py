@@ -17,11 +17,12 @@ class CanisLupus:
 class Arctos(CanisLupus):
 
     def __init__(self, name: str, age: int):
-        self.name: str = name
-        self.age : int = age
+
         self.greeting = "i'm a cool wolf"
         self.favorite_food = "polar bear barbacue"
         self.species = "canis lupus arctos"
+
+        super().__init__(name, age)
 
     
 # Functions outside of dog class
