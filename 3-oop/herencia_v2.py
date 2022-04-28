@@ -4,7 +4,7 @@ class CanisLupus:
         self.name = name
         self.age = age  
         self.greeting = "i'm a wolf"
-        self.favorite_food = "carne"
+        self.favorite_food = "barbacue"
         self.species = "canis lupus"  
     
     def __str__(self) -> str:
@@ -31,4 +31,5 @@ if __name__ == "__main__":
     cani = CanisLupus("CANI",4)
     anya = Arctos("anay", 4)
 
+    print(cani)
     print(anya)
