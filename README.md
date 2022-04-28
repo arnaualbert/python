@@ -361,7 +361,68 @@ class Dog():
 
 la herencia es un metodo para no repetir codigo
 
+```python
+class CanisLupus:
+    def __init__(self,name: str,age: int) -> None:
+        self.name = name
+        self.age = age  
+        self.greeting = "i'm a wolf"
+        self.favorite_food = "meat"
+        self.species = "canis lupus"  
+    
+    def __str__(self) -> str:
+        introduction = f"my name is {self.name}, i'm a {self.species} and i'm {self.age} years old"
+        closing = f"i love {self.favorite_food} and {self.greeting}"
 
+        return f" {introduction}\n{closing}"
+
+class Arctos(CanisLupus):
+
+    def __init__(self, name: str, age: int):
+
+        super().__init__(name, age)
+
+        self.greeting = "i'm a cool wolf"
+        self.favorite_food = "polar bear barbacue"
+        self.species = "canis lupus arctos"
+```
+
+@classmethod es un decorador para tener dos constructores
+
+```python
+class Table:
+
+    # Constructor
+    # -------------------------------------------------------------------------
+    def __init__(self, data: list[list[str]]):
+
+        self.data: list[list[str]] = data
+
+
+    # Alternative Constructor
+    # -------------------------------------------------------------------------
+    @classmethod # decorador
+    def from_csv(cls, csv_file_path: str):
+
+        raw_text:       str             = Path(csv_file_path).read_text()
+        stripped_text:  str             = raw_text.strip()
+        rows:           list[str]       = stripped_text.split("\n")
+        data:           list[list[str]] = [row.split(";") for row in rows]
+        table:          Table           = cls(data)
+
+        return table
+
+
+    # Print
+    # -------------------------------------------------------------------------
+    def __str__(self) -> str:
+
+        pretty_rows:  list[str] = [', '.join(row) for row in self.data]
+        pretty_table: str       =  '\n'.join(pretty_rows)
+
+        return pretty_table
+
+```
 
 ### - [Ir al índice](#Indice).
 
