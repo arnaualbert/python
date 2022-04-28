@@ -55,20 +55,16 @@ class Signatus(CanisLupus):
 class SignatusSiestus(Signatus):
 
     def __init__(self, name: str, age: int):
-
-        super().__init__(name, age)
-
         pass
 
-    #     self.greeting = "soy un lobo iberico"
-    #     self.favorite_food = "paella"
-    #     self.species = "canis lupus signatus"
+        # self.greeting = "soy un lobo iberico"
+        # self.favorite_food = "paella"
+        # self.species = "canis lupus signatus"
 
-    # def __str__(self) -> str:
+    def __str__(self) -> str:
 
-    #     canis_lupus_phrase = super().__str__() # llama al __str__ de canis lupus 
-    #     lola_phrase = "a cup of cafe con leche in Plaza Mayor"
-    #     return canis_lupus_phrase + "\n" + lola_phrase
+        siesta = f"zzzzzz"
+        return siesta
         
     
 # Functions outside of dog class
@@ -90,7 +86,7 @@ if __name__ == "__main__":
     anya = Arctos("anay", 4)
     miguel = Baileyi("miguel",4)
     rafa = Signatus("rafa",4)
-    antonio = Signatus("antonio",4)
+    antonio = SignatusSiestus("antonio",4)
 
 
     print(cani)
