@@ -24,7 +24,7 @@ class Arctos(CanisLupus):
         self.species = "canis lupus arctos"
 
     
-# Functions outside oF dog class
+# Functions outside of dog class
 # ----------------------------------------------------------------------------------------------------------------------
 def show_attributes(something):
 
