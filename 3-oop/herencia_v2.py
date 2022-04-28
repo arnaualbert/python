@@ -44,6 +44,14 @@ class Signatus(CanisLupus):
         self.greeting = "soy un lobo iberico"
         self.favorite_food = "paella"
         self.species = "canis lupus signatus"
+
+    def __str__(self) -> str:
+
+        canis_lupus_phrase = super().__str__()
+        lola_phrase = "a cup of cafe con leche in Plaza Mayor"
+        return canis_lupus_phrase + "\n" + lola_phrase
+
+        
     
 # Functions outside of dog class
 # ----------------------------------------------------------------------------------------------------------------------
