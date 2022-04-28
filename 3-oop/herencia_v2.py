@@ -95,6 +95,10 @@ if __name__ == "__main__":
     print(rafa)
     print(antonio)
 
+    print(f"antonio es de tipo : {type(antonio)}") # para saber el tipo
+    print(f"antonio es un signatus? {isinstance(antonio, Signatus)}") # para preguntar si es una instancia
+    print(f"antonio es un CanisLupus? {isinstance(antonio, CanisLupus)}") # para preguntar si es una instancia
+    print(f"antonio es un Arctos? {isinstance(antonio, Arctos)}") # para preguntar si es una instancia
+
     show_attributes(antonio)
     # show_attributes(anya)
-    
