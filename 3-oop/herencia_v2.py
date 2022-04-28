@@ -23,6 +23,15 @@ class Arctos(CanisLupus):
         self.species = "canis lupus arctos"
 
     
+# Functions outside oF dog class
+# ----------------------------------------------------------------------------------------------------------------------
+def show_attributes(something):
+
+    keys = sorted(something.__dict__.keys())
+    values = [something.__dict__[key] for key in keys]
+
+    for key, value in zip(keys, values):
+        print(f"{key}: {value}")
 
 
 # modulo
@@ -33,3 +42,6 @@ if __name__ == "__main__":
 
     print(cani)
     print(anya)
+
+    show_attributes(cani)
+    show_attributes(anya)
