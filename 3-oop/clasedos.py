@@ -19,7 +19,7 @@ class Baileyi:
         self.favorite_food = "burritos"
         self.species = "canis lupus baileyi"
     def __str__(self) -> str:
-        introduction = f"my nombre es {self.name}, soy un {self.species} y tengo {self.age} años"
+        introduction = f"mi nombre es {self.name}, soy un {self.species} y tengo {self.age} años"
         closing = f"me encanta {self.favorite_food} y {self.greeting}"
 
         return f" {introduction}\n{closing}"
@@ -32,7 +32,7 @@ class Signatus:
         self.favorite_food = "paella"
         self.species = "canis lupus signatus"
     def __str__(self) -> str:
-        introduction = f"my llamo es {self.name}, soy un {self.species} y tengo {self.age} años"
+        introduction = f"me llamo es {self.name}, soy un {self.species} y tengo {self.age} años"
         closing = f"mi comida favorita es {self.favorite_food} y {self.greeting}"
 
         return f" {introduction}\n{closing}"
@@ -41,3 +41,7 @@ if __name__ == "__main__":
     anya = Arctos("anya",4)
     miguel = Baileyi("miguel",4)
     rafa = Signatus("rafa",4)
+
+    print(anya)
+    print(miguel)
+    print(rafa)
