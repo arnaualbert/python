@@ -54,8 +54,9 @@ class Signatus(CanisLupus):
 
 class SignatusSiestus(Signatus):
 
-    def __init__(self,name: str, age: int,ronquido):
-        self.ronquido = ronquido
+    def __init__(self,name: str, age: int,nana):
+        self.nana = nana
+        self.ronquido = "z"
 
         # self.greeting = "soy un lobo iberico"
         # self.favorite_food = "paella"
@@ -66,6 +67,13 @@ class SignatusSiestus(Signatus):
         siesta = self.ronquido
         return siesta
         
+    def from_nana(self):
+        if self.nana == "nana":
+            self.ronquido = "zzzzz"
+        else:
+            self.ronquido = "hahahah"
+        
+
     
 # Functions outside of dog class
 # ----------------------------------------------------------------------------------------------------------------------
@@ -86,7 +94,7 @@ if __name__ == "__main__":
     anya = Arctos("anay", 4)
     miguel = Baileyi("miguel",4)
     rafa = Signatus("rafa",4)
-    antonio = SignatusSiestus("antonio",4,"ghghghghg")
+    antonio = SignatusSiestus("antonio",4,"nana")
 
 
     print(cani)

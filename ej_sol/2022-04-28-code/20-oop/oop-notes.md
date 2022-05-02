@@ -17,6 +17,9 @@
 # Class attributes
 - https://www.toptal.com/python/python-class-attributes-an-overly-thorough-guide
 
+# Superclasses
+- https://realpython.com/python-super/
+
 
 # 2. Fun
 -------------------------------------------------------------------------------
