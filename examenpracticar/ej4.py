@@ -1,3 +1,11 @@
+"""OOP Exercise 4: Class Inheritance
+
+Given:
+
+Create a Bus class that inherits from the Vehicle class. Give the capacity argument of Bus.seating_capacity() a default value of 50.
+
+Use the following code for your parent Vehicle class."""
+
 class Vehicle:
     """this is a vehicle"""
     def __init__(self, name, max_speed, mileage):

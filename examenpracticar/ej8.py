@@ -1,6 +1,4 @@
-"""OOP Exercise 7: Check type of an object
-
-Write a program to determine which class a given Bus object belongs to."""
+"""OOP Exercise 8: Determine if School_bus is also an instance of the Vehicle class"""
 
 class Vehicle:
     def __init__(self, name, mileage, capacity):
@@ -13,4 +11,4 @@ class Bus(Vehicle):
 
 if __name__ == "__main__":
     School_bus = Bus("School Volvo", 12, 50)
-    print(type(School_bus))
+    print(isinstance(School_bus,Vehicle))
