@@ -4,6 +4,13 @@ Create a Bus object that will inherit all of the variables and methods of the pa
 class Vehicle:
 
     def __init__(self, name, max_speed, mileage):
+        """_summary_
+
+        Args:
+            name (str): the name of the vehicle
+            max_speed (int): the maximum speed
+            mileage (int): the mileage
+        """
         self.name = name
         self.max_speed = max_speed
         self.mileage = mileage
@@ -11,7 +18,15 @@ class Vehicle:
 class Bus(Vehicle):
 
     def __init__(self, name, max_speed, mileage):
+        """_summary_
+
+        Args:
+            name (str): the name of the vehicle
+            max_speed (int): the maximum speed
+            mileage (int): the mileage
+        """
         super().__init__(name, max_speed, mileage)   
+
 
 
 if __name__ == "__main__":

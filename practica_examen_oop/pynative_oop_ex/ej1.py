@@ -7,6 +7,12 @@ class Vehicle():
     """This is a vehicle"""
 
     def __init__(self,max_speed: int,mileage: int) -> None:
+        """_summary_
+
+        Args:
+            max_speed (int): _description_
+            mileage (int): _description_
+        """
         self.max_speed = max_speed
         self.mileage = mileage
 

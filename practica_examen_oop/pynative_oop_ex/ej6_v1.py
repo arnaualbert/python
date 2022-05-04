@@ -12,16 +12,33 @@ Use the following code for your parent Vehicle class. We need to access the pare
 
 class Vehicle:
     def __init__(self, name, mileage, capacity):
+        """_summary_
+
+        Args:
+            name (str): the name of the vehicle
+            mileage (int): milage
+            capacity (int): capacity
+        """
         self.name = name
         self.mileage = mileage
         self.capacity = capacity
 
     def fare(self):
+        """_summary_
+
+        Returns:
+            int: integer
+        """
         return self.capacity * 100
 
 class Bus(Vehicle):
     
     def fare(self):
+        """_summary_
+
+        Returns:
+            int: 10% more than a normal vehicle
+        """
         self.capacity = self.capacity * 110
 
         return self.capacity

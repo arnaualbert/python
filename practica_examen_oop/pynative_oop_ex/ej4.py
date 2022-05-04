@@ -9,6 +9,13 @@ Use the following code for your parent Vehicle class."""
 class Vehicle:
     """this is a vehicle"""
     def __init__(self, name, max_speed, mileage):
+        """_summary_
+
+        Args:
+            name (str): the name of the vehicle
+            max_speed (int): the maximum speed
+            mileage (int): the mileage
+        """
         self.name = name
         self.max_speed = max_speed
         self.mileage = mileage
@@ -20,6 +27,14 @@ class Bus(Vehicle):
     """this is a child class of a vehicle called Bus"""
     # assign default value to capacity
     def seating_capacity(self, capacity=50):
+        """_summary_
+
+        Args:
+            capacity (int, optional):  Defaults to 50.
+
+        Returns:
+            int: 50 default
+        """
         return super().seating_capacity(capacity=50)
 
 if __name__ == "__main__":
