@@ -2,6 +2,13 @@
 
 class Vehicle:
     def __init__(self, name, mileage, capacity):
+        """_summary_
+
+        Args:
+            name (str): name of the vehicle
+            mileage (int): int
+            capacity (int): int
+        """
         self.name = name
         self.mileage = mileage
         self.capacity = capacity

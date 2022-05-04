@@ -2,7 +2,15 @@
 
 
 class Teacher():
-    def __init__(self, name, age, salary):
+    def __init__(self, name: str, age: int, salary: int):
+        """_summary_
+
+        Args:
+            name (str): the name
+            age (int): the age
+            salary (int): the salary
+        """
+        
         self.name = name
         self.age = age
 

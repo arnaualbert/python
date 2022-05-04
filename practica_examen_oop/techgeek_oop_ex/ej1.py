@@ -3,6 +3,13 @@
 class Students():
 
     def __init__(self,name: str,age: int,grade: str) -> None:
+        """_summary_
+
+        Args:
+            name (str): the name of the student
+            age (int): the age of the student
+            grade (str): the grade of the student
+        """
         
         self.name = name
         self.age = age

@@ -3,12 +3,20 @@
 
 class Staff:
     def show_details(self):
+        """show the details
+        """
         print("Name: ", self.name)
         print("Age: ", self.age)
 
 # inherit from the Staff class
 class Teacher(Staff):
-    def __init__(self, name, age):
+    def __init__(self, name: str, age:int):
+        """_summary_
+
+        Args:
+            name (str): the name
+            age (int): the age
+        """
         self.name = name
         self.age = age
 
