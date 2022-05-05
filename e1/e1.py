@@ -103,7 +103,7 @@ class Protein(Seq):
         body:list[str] = line_list[1:]
         seq:str = ''.join(body)
         sequencia = cls(seq)
-        if fasta_path == "data_rna.fasta":
+        if fasta_path != "data_protein.fasta":
             assert False
         return sequencia
 
