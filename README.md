@@ -426,6 +426,19 @@ class Table:
 
 ### - [Ir al índice](#Indice).
 
+
+
+# Exception
+
+
+
+
+
+
+
+
+### - [Ir al índice](#Indice).
+
 # TIPS
 
 F10: ejecuta linea
