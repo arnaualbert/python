@@ -12,6 +12,8 @@ def check_int():
 
 if __name__ == "__main__":
 
-    num : int = check_int()
-
-    print(f"has escrito : {num}")
+    try:
+        num : int = check_int()
+        print(f"has escrito : {num}")
+    except:
+        print("Ha habido un error prueba de poner un numero")
