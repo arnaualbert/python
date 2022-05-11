@@ -436,6 +436,8 @@ Una exception contiene lo que tu quieras, como minimo un mensaje de error que se
 
 despues de el raise no se ejecuta !! 
 
+si ocurre un error se puede tratar
+
 Como se crea una exception
 
 ```python
