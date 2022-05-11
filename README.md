@@ -438,7 +438,7 @@ Como se crea una exception
 
 ```python
 
-Exception("ha habido un error!")
+Exception("ha habido un error !")
 
 ```
 
