@@ -440,6 +440,8 @@ Como se crea una exception
 
 Exception("ha habido un error !")
 
+MemoryError("No tienes espacio")
+
 ```
 
 ### - [Ir al índice](#Indice).
