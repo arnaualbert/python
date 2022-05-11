@@ -458,7 +458,7 @@ else :
     
     raise Exception("edad negativa")
 
- # despues de la excepcion lo de abajo no se ejecuta   
+# despues de la excepcion lo de abajo no se ejecuta   
 
 def do_login(...)
     ...              # no se ejecuta porque saltamo a algun sitio
