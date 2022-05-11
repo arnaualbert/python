@@ -432,12 +432,15 @@ class Table:
 
 Una exception es un objeto que se usa caundo hay un error en mi programa
 
-Una exception contiene lo que tu quieras, como minimo un mensaje de error
+Una exception contiene lo que tu quieras, como minimo un mensaje de error que se imprime cuando imprimimos la exception
 
+Como se crea una exception
 
+```python
 
+Exception("ha habido un error!")
 
-
+```
 
 ### - [Ir al índice](#Indice).
 
