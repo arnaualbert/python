@@ -9,4 +9,6 @@ def check_int():
 
 if __name__ == "__main__":
 
-    check_int()
+    num : int = check_int()
+
+    print(f"has escrito : {num}")
