@@ -430,7 +430,9 @@ class Table:
 
 # Exception
 
+Una exception es un objeto que se usa caundo hay un error en mi programa
 
+Una exception contiene lo que tu quieras, como minimo un mensaje de error
 
 
 
