@@ -434,13 +434,27 @@ Una exception es un objeto que se usa caundo hay un error en mi programa
 
 Una exception contiene lo que tu quieras, como minimo un mensaje de error que se imprime cuando imprimimos la exception
 
+despues de el raise no se ejecuta !! 
+
 Como se crea una exception
 
 ```python
 
 Exception("ha habido un error !")
 
-MemoryError("No tienes espacio")
+MemoryError("No tienes espacio") # error no tienes memoria
+
+ex : Exception = Exception("hay un error !")
+
+
+if age >= 0:
+
+    print("estas vivo")
+
+else :
+    
+    raise Exception("edad negativa")
+
 
 ```
 
