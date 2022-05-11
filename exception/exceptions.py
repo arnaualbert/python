@@ -1,7 +1,10 @@
 
 
+
+
+
 def check_int():
-    
+
     num_str : str = input("escribe un entero : ")
     num: int = int(num_str)
 
