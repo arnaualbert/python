@@ -446,6 +446,9 @@ MemoryError("No tienes espacio") # error no tienes memoria
 
 ex : Exception = Exception("hay un error !")
 
+#ejemplo
+
+age : int = 1
 
 if age >= 0:
 
@@ -455,6 +458,12 @@ else :
     
     raise Exception("edad negativa")
 
+ # despues de la excepcion lo de abajo no se ejecuta   
+
+def do_login(...)
+    ...              # no se ejecuta porque saltamo a algun sitio
+    ...
+    ..
 
 ```
 
