@@ -436,7 +436,11 @@ Una exception contiene lo que tu quieras, como minimo un mensaje de error que se
 
 despues de el raise no se ejecuta !! 
 
-si ocurre un error se puede tratar
+si ocurre un error se puede tratar ? 
+
+No : mi programa finalizara
+
+Si : escoger donde tratarlo y poner alli los bloques
 
 Como se crea una exception
 
@@ -467,6 +471,13 @@ def do_login(...)
     ...
     ..
 
+
+
+try :
+    .... # lo que puede fallar
+except:
+    .... # tratamiento error
+    
 ```
 
 ### - [Ir al índice](#Indice).
