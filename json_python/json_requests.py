@@ -1,3 +1,4 @@
+from pprint import pp, pprint
 import requests
 from requests.models import Response
 
@@ -13,5 +14,11 @@ url: str = 'https://animechan.vercel.app/api/random'
 response: Response = requests.get(url)
 
 # print response
+def get_loco():
 
+    while True:
+        requests.get(url)
+
+
+pprint(response.json())
 print(response)
