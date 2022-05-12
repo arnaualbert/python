@@ -287,6 +287,18 @@ python -m http.server
 
 127.0.0.1:8000 (direccion propia)
 
+Principales metodos request:
+
+GET
+
+POST (tambien se usa para conseguir datos)
+
+PUT (subir datos al servidor)
+
+DELETE (borrar datos servidor)
+
+UPDATE (actualizar fichero servidor)
+
 ### - [Ir al índice](#Indice).
 
 # Recursion
