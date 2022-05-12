@@ -1,5 +1,4 @@
 import json
-import pprint
 
 data = ['foo', {'bar': ('baz', None, 1.0, 2)}]
 
