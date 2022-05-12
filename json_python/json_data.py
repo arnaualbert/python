@@ -6,9 +6,13 @@ py_str = str(data)
 
 json_str = json.dumps(data)
 
+py_data_2 = json.loads(json_str)
+
 print(json_str)
 
 print(py_str)
+
+print(py_data_2)
 
 # print(json.dumps("\"foo\bar"))
 
