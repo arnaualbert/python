@@ -14,8 +14,8 @@ url: str = 'https://animechan.vercel.app/api/random'
 response: Response = requests.get(url)
 
 # print response
-while True:
-    requests.get(url)
+# while True:
+#     requests.get(url)
 
 
 pprint(response.json())
