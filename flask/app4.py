@@ -44,18 +44,21 @@ def get_dna_nucleotides(dna: str):
     c = dna.count('C')
     g = dna.count('G')
 
-    return (f'A = {a} C = {c} G = {g} T = {t}')
+    return (f'tienes : A = {a} C = {c} G = {g} T = {t}')
 
 def get_transcription(adn: str):
+
+    eje = adn
 
     # change the T to U
     transcription = adn.replace('T','U')
 
-    return transcription
+    return (f"{transcription} esta es la transcripcion de tu sequencia {eje}")
 
 def get_complement(fasta: str):
 
     # reverse de bases i mean from left to right to right to left
+    eje = fasta
     fasta = reversed(fasta)
     # create the complement 
     reverse_fasta = ''
@@ -69,7 +72,7 @@ def get_complement(fasta: str):
         else:
             reverse_fasta += 'G'
 
-    return reverse_fasta
+    return (f"este es el reverse : {reverse_fasta}, de tu sequencia : {eje}")
 
 
 
