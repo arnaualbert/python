@@ -494,6 +494,32 @@ except:
 
 ### - [Ir al índice](#Indice).
 
+# Flask
+
+```python
+
+#1 inicializacion
+from flask import Flask
+
+app: Flask = Flask(__name__)
+
+#3 rutas
+
+@app.route("/")
+def index():
+    ...
+    ...
+    ...
+
+#2 run
+if __name__ == "__main__":
+    app.run(debug=True)
+
+```
+
+
+### - [Ir al índice](#Indice).
+
 # TIPS
 
 F10: ejecuta linea
