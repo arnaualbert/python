@@ -8,7 +8,7 @@ app: Flask = Flask(__name__)
 @app.route("/")
 def index():
 
-    quote: str = "Tiki Taka, Jogo Bonito, Champagne, Pim Pam toma lacasitos"
+    quote: str = "<h1> Quotes </h1> Tiki Taka, Jogo Bonito, Champagne, Pim Pam toma lacasitos"
 
     return quote
 
