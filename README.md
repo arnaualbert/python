@@ -517,6 +517,15 @@ if __name__ == "__main__":
 
 ```
 
+Web dinamica vs estaticas
+
+dinamica: no exixte fichero html a disco
+
+cuando se recive una request se llama a una funcion que genera el codigo html y se devuelve directamente cada vez
+
+este html autogenerado puede cambiar en cada peticion
+
+estatica : existe el archivo html a disco
 
 ### - [Ir al índice](#Indice).
 
