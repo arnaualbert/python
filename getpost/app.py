@@ -15,9 +15,9 @@ def index():
         return render_template('index.html')
     if request.method == 'POST':
         comic : str = request.form['comic']
-        volume : str = request.form['volumen']
+        volume : int = request.form['volumen']
         return f'you have bought {comic} volume {volume}'
-
+    return ''
 
 #2 run
 if __name__ == "__main__":
