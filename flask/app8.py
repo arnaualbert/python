@@ -14,9 +14,11 @@ def index():
     if request.method == 'GET':
         return render_template('index.html')
     if request.method == 'POST':
-        pass
+        comic : str = request.form['comic']
+        volume : str = request.form['volumen']
 
-    return ''
+
+    return f'you have bought {comic} volume {volume}'
 
 
 #2 run
