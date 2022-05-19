@@ -1,6 +1,8 @@
 from unicodedata import name
 from flask import Flask, Response, render_template
 
+# parametros por ruta
+
 #1 inicializacion
 module_name = __name__
 app: Flask = Flask(__name__)
