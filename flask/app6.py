@@ -1,4 +1,3 @@
-
 from flask import Flask, Response, render_template
 
 # parametros por ruta
