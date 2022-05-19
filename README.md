@@ -535,10 +535,13 @@ Peticiones GET : Parametros
 
   http://                       www.myapp.com                /welcome
 
- protocolo      dominio     ruta dentro de web          
+ protocolo      dominio     ruta dentro de web         
+
                     |
                     | DNS
                     |
+
+                    
            IPv4: 20.34.120.56
 
       
