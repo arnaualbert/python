@@ -8,7 +8,7 @@ cur.execute('''CREATE TABLE stocks
 
 # Insert a row of data
 cur.execute("INSERT INTO stocks VALUES ('2006-01-05','BUY','RHAT',100,35.14)")
-
+# se pueden hacer format strings
 # Save (commit) the changes
 con.commit()
 
