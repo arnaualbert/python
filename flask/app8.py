@@ -11,9 +11,12 @@ app: Flask = Flask(__name__)
 @app.route("/", methods=['GET','POST'])
 def index():
 
-    saludo : str = "hola" # con render tamplate se le pasa el nombre de el archivo y las variables
+    if request.method == 'GET':
+        pass
+    if request.method == 'POST':
+        pass
 
-    return saludo
+    return ''
 
 
 #2 run
