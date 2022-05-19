@@ -532,6 +532,15 @@ este html autogenerado puede cambiar en cada peticion
 estatica : existe el archivo html a disco (ssg)
 
 Peticiones GET : Parametros
+
+los parametros estan en la url , tienen tamaño limitado
+
+
+Peticiones Post: 
+
+se usan normalente en formularios
+
+
 ```python
   http://                          www.myapp.com                /welcome
 
