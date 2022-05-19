@@ -1,12 +1,13 @@
 from crypt import methods
 from flask import Flask, Response, render_template,request
+from pathlib import Path
 
 # parametros por ruta
 
 #1 inicializacion
 module_name = __name__
 app: Flask = Flask(__name__)
-app.root_path # importante
+root_path : Path = Path(app.root_path) # importante
 #3 rutas
 @app.route("/", methods=['GET','POST'])
 def index():
