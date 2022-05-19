@@ -525,7 +525,7 @@ cuando se recive una request se llama a una funcion que genera el codigo html y 
 
 este html autogenerado puede cambiar en cada peticion
 
-estatica : existe el archivo html a disco
+estatica : existe el archivo html a disco (ssg)
 
 ### - [Ir al índice](#Indice).
 
