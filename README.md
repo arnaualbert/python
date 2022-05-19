@@ -540,6 +540,12 @@ Peticiones Post:
 
 se usan normalente en formularios
 
+1 espera el get en una ruta y envio formulario
+
+2 en el formulario se especifica que los datos se mandaran usando el metodo post
+
+3 mi funcion distingue entre metodos get y posdt y si recibe una request post recoge los parametros del formulario
+
 
 ```python
   http://                          www.myapp.com                /welcome
