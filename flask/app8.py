@@ -12,7 +12,7 @@ app: Flask = Flask(__name__)
 def index():
 
     if request.method == 'GET':
-        pass
+        return render_template('index.html')
     if request.method == 'POST':
         pass
 
