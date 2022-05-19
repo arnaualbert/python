@@ -534,6 +534,7 @@ estatica : existe el archivo html a disco (ssg)
 Peticiones GET : Parametros
 
   http://    www.myapp.com      /welcome
+  
  protocolo      dominio     ruta dentro de web          
                     |
                     | DNS
