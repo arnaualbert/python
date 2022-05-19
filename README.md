@@ -30,6 +30,10 @@
 
 ## - [OOP](#OOP)
 
+## - [Exception](#Exception)
+
+## - [Flask](#Flask)
+
 ## - [TIPS](#TIPS)
 
 # Brackets
