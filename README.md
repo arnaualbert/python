@@ -532,7 +532,7 @@ este html autogenerado puede cambiar en cada peticion
 estatica : existe el archivo html a disco (ssg)
 
 Peticiones GET : Parametros
-
+```python
   http://                          www.myapp.com                /welcome
 
  protocolo                           dominio                ruta dentro de web         
@@ -543,7 +543,7 @@ Peticiones GET : Parametros
 
 
                                 IPv4: 20.34.120.56
-
+```
       
 
 ### - [Ir al índice](#Indice).
