@@ -33,7 +33,7 @@ def index():
         reverse_fasta="Put a sequence to get the complement"
 
     data={'dna':count,'adn':transcription,'fasta':reverse_fasta}
-    return render_template('index.html',data=data)
+    return render_template('app4.html',data=data)
 
 
 def get_dna_nucleotides(dna: str):

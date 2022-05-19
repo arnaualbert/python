@@ -8,7 +8,7 @@ app: Flask = Flask(__name__)
 @app.route("/")
 def index():
 
-    html : str = render_template("index.html", title="Flask v3", name="Arnau") # con render tamplate se le pasa el nombre de el archivo y las variables
+    html : str = render_template("app3.html", title="Flask v3", name="Arnau") # con render tamplate se le pasa el nombre de el archivo y las variables
 
     return html
 
