@@ -59,6 +59,24 @@ def get_area_list(covid_dict: dict[str, list]) -> list[str]:
     return unique_area_list
 
 
+# -----------------------------------------------------------------------------
+def get_area_list_v2(covid_dict: dict[str, list]) -> list[str]:
+    """
+    Input:  Dictionary with covid data.
+    Output: List of areas (nom) in the data. The list has no repeats.
+    """
+
+    area_list: list[str] = covid_dict['NOM']
+    result:    list[str] = []
+    area:      str
+
+    for area in area_list:
+        if area not in result:
+            result.append(area)
+
+    return result
+
+
 
 # #############################################################################
 # Main code
@@ -92,6 +110,7 @@ def print_ranking(csv_filename: str) -> None:
     # 5. Print ranking
     for area, deaths in sorted_zip_list:
         print(f"{area}: {deaths}")
+
 
 
 # command_line (sys.argv) is a global variable. Never modify it!

@@ -52,8 +52,8 @@ def main(input_dir: Path, output_dir: Path) -> None:
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 
-    # args: list[str] = sys.argv                       # For command-line
-    args: list[str] = [sys.argv[0], "input", "output"] # For easy testing
+    args: list[str] = sys.argv                           # For command-line
+    # args: list[str] = [sys.argv[0], "input", "output"] # For easy testing
 
     input_dir, output_dir = cmdline.parse_args(args)
 

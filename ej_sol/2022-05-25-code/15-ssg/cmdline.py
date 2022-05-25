@@ -6,7 +6,9 @@ import argparse
 
 # -----------------------------------------------------------------------------
 def parse_args(cmdline: list[str]) -> tuple[Path, Path]:
-    """Parses the commandline. Must include executable path in [0], like sys.argv."""
+    """Parses the commandline.
+       Must include executable path in [0], like sys.argv.
+    """
 
     # Split command line
     program_name: str       = Path(cmdline[0]).name
@@ -16,7 +18,8 @@ def parse_args(cmdline: list[str]) -> tuple[Path, Path]:
     description: str = "Reads markdown entries and writes them in an html blog."
 
     # Create parser
-    parser = argparse.ArgumentParser(prog=program_name, description=description)
+    parser = argparse.ArgumentParser(prog=program_name,
+                                     description=description)
 
     # Define expected arguments
     parser.add_argument("input_dir",  help="Input directory",  type=Path)
