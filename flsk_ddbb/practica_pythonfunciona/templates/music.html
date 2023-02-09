@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <title>Hall Of Fame</title>
+     </head>
+     
+<body>
+    <div>
+        <a href="/travis" target="_blank"><img class="img_t" src="{{url_for('static', filename='travis.jpg')}}" /></a>
+        <a href="/mozart" target="_blank"><img class="img_t" src="{{url_for('static', filename='mozart.jpg')}}" /></a>
+        <a href="/acdc" target="_blank"><img class="img_t" src="{{url_for('static', filename='acdc.jpg')}}" /></a>
+    </div>
+    <div>
+        <a href="/marley" target="_blank"><img class="img_t" src="{{url_for('static', filename='marley.jpg')}}" /></a>
+        <a href="/beatles" target="_blank"><img class="img_t" src="{{url_for('static', filename='beatles.jpg')}}" /></a>
+        <a href="/sinatra" target="_blank"><img class="img_t" src="{{url_for('static', filename='sinatra.jpg')}}" /></a>
+    </div>
+    <p>Clica en la imagen que quieras</p>
+    <a href="/">Pagina principal</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <title>Hall Of Fame</title>
+</head>
+
+<body>
+   <div class="center">
+      <table border=1 style="margin: 0 auto;">
+         <thead>
+            <td>Name</td>
+            <td>Sport</td>
+            <td>Team</td>
+            <td>trofeos</td>
+         </thead>
+
+         {% for row in rows %}
+         <tr>
+            <td>{{row["name"]}}</td>
+            <td>{{row["sport"]}}</td>
+            <td> {{ row["team"]}}</td>
+            <td>{{row['trofeos']}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+
+      <a href="/">Go back to home page</a>
+   </div>
+</body>
+
+</html>

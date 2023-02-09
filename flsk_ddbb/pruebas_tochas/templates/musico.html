@@ -1,0 +1,42 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <title>Hall Of Fame</title>
+</head>
+
+<body>
+   <div class="center">
+      <form action="{{ url_for('addrecmusic') }}" method="POST">
+         <h3>Musician</h3>
+         Name<br>
+         <input type="text" name="nm" /></br>
+
+         Music Genre<br>
+         <select name="genre">
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Rap">Rap</option>
+            <option value="Country">Country</option>
+            <option value="Electronic">Electronic</option>
+            <option value="R&B">R&B</option>
+            <option value="Dubstep">Dubstep</option>
+            <option value="K-Pop">K-Pop</option>
+            <option value="Reggae">Reggae</option>
+          </select><br>
+
+         Group<br>
+         <input type="text" name="grupo" /><br>
+
+         Grammy<br>
+         <input type="number" name="grammy" /><br>
+         <input type="submit" value="submit" /><br>
+      </form>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Hall Of Fame</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Bienvenido al Salon de la fama</h1>
+    </div>
+    <div class="navbar">
+        <a href="./enternewsportman">Añadir Deportista</a>
+        <a href="./listsport">Hall Of Fame Sports</a>
+        <a href="./enternewmusic">Añadir musico</a>
+        <a href="./listmusic">Hall Of Fame music</a>
+        <a href="./enternewcar">Añadir coche</a>
+        <a href="./listcar">Hall Of Fame cars</a>
+        <a href="./enternewteacher">Añadir Profesor</a>
+        <a href="./listteacher">Hall Of Fame Profesor</a>
+        <a href="./enternewscietist">Añadir Cientifico</a>
+        <a href="./listscientist">Hall Of Fame Ciencia</a>
+        <a href="./pregunta">Pregunta</a>
+        <a href="./listrespuesta">Respuesta</a>
+    </div>
+    <div class="instructions">
+        <h3>Instrucciones:</h3>
+        <ul>
+            <li>Hay cinco salones diferentes donde puedes ver a tus famosos favoritos</li>
+            <li>Por cada salon hay una pestaña para añadir a tus famosos</li>
+            <li>Los salones son los siguientes:</li>
+            <ul>
+                <li>Cientificos</li>
+                <li>Deportistas</li>
+                <li>Musicos</li>
+                <li>Profesores</li>
+                <li>Coches</li>
+            </ul>
+        </ul>
+    </div>
+    <div>
+        <img src="{{url_for('static', filename='jcole.jpg')}}" />
+        <img src="{{url_for('static', filename='senna.jpg')}}" />
+        <img src="{{url_for('static', filename='cience.jpg')}}" />
+    </div>
+    <div>
+        <h3>Gracias por pasaros por nuestra página</h3>
+        <p>Hecho por Arnau Albert Sanchez</p>
+    </div>
+</body>
+
+</html>

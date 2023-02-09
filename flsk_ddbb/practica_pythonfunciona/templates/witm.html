@@ -1,0 +1,40 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <title>Hall Of Fame</title>
+</head>
+
+<body>
+   <div class="center">
+      <form action="{{ url_for('pwitm') }}" method="POST"> <!-- manda la informacion a la variable de python -->
+         <h3>Who is the most</h3>
+
+         Database<br>
+         <select name="database">
+            <option value="halloffamesports">Deportes</option>
+            <option value="halloffamemusic">Musicos</option>
+            <option value="halloffamecars">Coches</option>
+            <option value="halloffameteachers">Profesores</option>
+            <option value="halloffamescietist">Cientificos</option>
+          </select><br>
+
+         Campo<br>
+         <select name="campo">
+            <option value="valorquatro">Quien tiene mas trofeos</option>
+            <option value="valorquatro">Quien tiene mas grammy</option>
+            <option value="valordos">Cual es el mas caro</option>
+            <option value="valorquatro">Quien tiene mas aprobados</option>
+            <option value="valortres">Quien tiene mas papers</option>
+          </select><br>
+
+         <input type="submit" value="submit" /><br>
+      </form>
+   </div>
+   <a href="/">Pagina principal</a>
+</body>
+
+</html>

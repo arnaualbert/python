@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Hall Of Fame</title>
+</head>
+
+
+<body>
+    <main>
+    <div class="form">
+    <form action="{{ url_for('add') }}" method="POST">
+        <select name="database">
+            <option value="halloffamesports">Deportes</option>
+        </select><br>
+        Name<br>
+        <input type="text" name="valoruno" /><br>
+
+        Sport<br>
+        <select name="valordos">
+            <option value="Football">Football</option>
+            <option value="F1">F1</option>
+            <option value="MotoGP">MotoGP</option>
+            <option value="Basket">Basket</option>
+            <option value="Boxing">Boxing</option>
+            <option value="swimming">swimming</option>
+            <option value="Cycling">Cycling</option>
+            <option value="Tennis">Tennis</option>
+            <option value="Judo">Judo</option>
+            <option value="Karate">Karate</option>
+            <option value="Track">Track</option>
+            <option value="Golf">Golf</option>
+        </select><br>
+
+        Team<br>
+        <input type="text" name="valortres" /><br>
+
+        trofeos<br>
+        <input type="number" name="valorquatro" /><br>
+        <input type="submit" value="submit" />
+    </form>
+    </div>
+    <div class="form">
+    <form action="{{ url_for('add') }}" method="POST">
+        <select name="database">
+            <option value="halloffamecars">Coches</option>
+        </select><br>
+        Name<br>
+        <input type="text" name="valoruno" /><br>
+
+        Price<br>
+        <input type="number" name="valordos"><br>
+
+        hp<br>
+        <input type="number" name="valortres" /><br>
+
+        brand<br>
+        <select name="valorquatro">
+            <option value="Ferrari">Ferrari</option>
+            <option value="Mclaren">Mclaren</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Audi">Audi</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Aston Martin">Aston Martin</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Mini">Mini</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Bentley">Bentley</option>
+            <option value="Opel">Opel</option>
+            <option value="Citroen">Citroen</option>
+            <option value="Renault">Renault</option>
+            <option value="GM">GM</option>
+            <option value="Jeep">Jeep</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Chevrolet">Chevrolet</option>
+        </select><br>
+        <input type="submit" value="submit" /><br>
+    </form>
+    </div>
+    <div class="form">
+    <form action="{{ url_for('add') }}" method="POST">
+        <select name="database">
+            <option value="halloffamemusic">Musicos</option>
+        </select><br>
+        Name<br>
+        <input type="text" name="valoruno" /><br>
+
+        Music Genre<br>
+        <select name="valordos">
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Rap">Rap</option>
+            <option value="Country">Country</option>
+            <option value="Electronic">Electronic</option>
+            <option value="R&B">R&B</option>
+            <option value="Dubstep">Dubstep</option>
+            <option value="K-Pop">K-Pop</option>
+            <option value="Reggae">Reggae</option>
+        </select><br>
+
+        Group<br>
+        <input type="text" name="valortres" /><br>
+
+        Grammy<br>
+        <input type="number" name="valorquatro" /><br>
+        <input type="submit" value="submit" /><br>
+    </form>
+    </div>
+    <div class="form">
+    <form action="{{ url_for('add') }}" method="POST">
+        <select name="database">
+            <option value="halloffameteachers">Profesores</option>
+        </select><br>
+        Name<br>
+        <select name="valoruno">
+            <option value="Roser">Roser</option>
+            <option value="Joan">Joan</option>
+            <option value="Pablo">Pablo</option>
+            <option value="Miquel">Miquel</option>
+            <option value="Victor">Victor</option>
+        </select><br>
+
+        Asignatura<br>
+        <select name="valordos">
+            <option value="Sistemas">Sistemas</option>
+            <option value="Bases de dades">Bases de dades</option>
+            <option value="Programacio">Programacio</option>
+            <option value="Marcas">Marcas</option>
+            <option value="Entorns">Entorns</option>
+            <option value="Bio">Bio</option>
+        </select><br>
+
+        Calidad<br>
+        <select name="valortres">
+            <option value="Excelente">Excelente</option>
+            <option value="Notable">Notable</option>
+            <option value="Buena">Buena</option>
+            <option value="Suficiente">Suficiente</option>
+            <option value="Insuficiente">Insuficiente</option>
+        </select><br>
+
+        Aprobados<br>
+        <input type="number" name="valorquatro" /><br>
+        <input type="submit" value="submit" /><br>
+    </form>
+    </div>
+    <div class="form">
+    <form action="{{ url_for('add') }}" method="POST">
+        <select name="database">
+            <option value="halloffamescietist">Cientificos</option>
+        </select><br>
+        Name<br>
+        <input type="text" name="valoruno" /><br>
+
+        Campo<br>
+        <select name="valordos">
+            <option value="Biology">Biology</option>
+            <option value="Astronomy">Astronomy</option>
+            <option value="Bioinformatics">Bioinformatics</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Medicine">Medicine</option>
+        </select><br>
+
+        Universidad<br>
+        <input type="text" name="valortres" /><br>
+
+        Papers<br>
+        <input type="number" name="valorquatro" /><br>
+
+        <input type="submit" value="submit" /><br>
+    </form>
+    </div>
+</main>
+<a href="/">Pagina principal</a>
+</body>
+
+</html>

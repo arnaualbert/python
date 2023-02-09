@@ -1,0 +1,50 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <title>Hall Of Fame</title>
+</head>
+
+<body>
+   <div class="center">
+      <form action="{{ url_for('addreccar') }}" method="POST">
+         <h3>Car</h3>
+         Name<br>
+         <input type="text" name="nm" /></br>
+
+         Price<br>
+         <input type="number" name="price"><br>
+
+         hp<br>
+         <input type="number" name="hp" /><br>
+
+         brand<br>
+         <select name="brand">
+            <option value="Ferrari">Ferrari</option>
+            <option value="Mclaren">Mclaren</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Audi">Audi</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Aston Martin">Aston Martin</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Mini">Mini</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Bentley">Bentley</option>
+            <option value="Opel">Opel</option>
+            <option value="Citroen">Citroen</option>
+            <option value="Renault">Renault</option>
+            <option value="GM">GM</option>
+            <option value="Jeep">Jeep</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Chevrolet">Chevrolet</option>
+          </select><br>
+         <input type="submit" value="submit" /><br>
+      </form>
+   </div>
+</body>
+
+</html>

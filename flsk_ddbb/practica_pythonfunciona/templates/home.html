@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Hall Of Fame</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Bienvenido al Salon de la fama</h1>
+    </div>
+    <div class="navbar">
+        <a href="./fotos">Fotos</a>
+        <a href="./delete">Borrar</a>
+        <a href="./witm">Pregunta</a>
+        <a href="./add">añadir</a>
+        <a href="./list">ver</a>
+    </div>
+    <div class="instructions">
+        <h3>Instrucciones:</h3>
+        <ul>
+            <li>Hay cinco salones diferentes donde puedes ver a tus famosos favoritos</li>
+            <li>Por cada salon hay una pestaña para añadir a tus famosos</li>
+            <li>Tambien hay un apartado de imagenes historicas</li>
+            <li>Los salones son los siguientes:</li>
+            <ul>
+                <li>Cientificos</li>
+                <li>Deportistas</li>
+                <li>Musicos</li>
+                <li>Profesores</li>
+                <li>Coches</li>
+            </ul>
+        </ul>
+    </div>
+    <div>
+        <img src="{{url_for('static', filename='jcole.jpg')}}" />
+        <img src="{{url_for('static', filename='senna.jpg')}}" />
+        <img src="{{url_for('static', filename='cience.jpg')}}" />
+    </div>
+    <div>
+        <h3>Gracias por pasaros por mi página</h3>
+        <p>Hecho por Arnau Albert Sanchez</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <title>Hall Of Fame</title>
+</head>
+
+<body>
+   <div class="center">
+      <form action="{{ url_for('addrecteacher') }}" method="POST">
+         <h3>Teacher</h3>
+         Name<br>
+         <select name="nm">
+            <option value="Roser">Roser</option>
+            <option value="Joan">Joan</option>
+            <option value="Pablo">Pablo</option>
+            <option value="Miquel">Miquel</option>
+            <option value="Victor">Victor</option>
+          </select><br>
+
+         Asignatura<br>
+         <select name="asignatura">
+            <option value="Sistemas">Sistemas</option>
+            <option value="Bases de dades">Bases de dades</option>
+            <option value="Programacio">Programacio</option>
+            <option value="Marcas">Marcas</option>
+            <option value="Entorns">Entorns</option>
+            <option value="Bio">Bio</option>
+          </select><br>
+
+         Calidad<br>
+         <select name="calidad">
+            <option value="Excelente">Excelente</option>
+            <option value="Notable">Notable</option>
+            <option value="Buena">Buena</option>
+            <option value="Suficiente">Suficiente</option>
+            <option value="Insuficiente">Insuficiente</option>
+          </select><br>
+
+         Aprobados<br>
+         <input type="number" name="aprobados" /><br>
+         <input type="submit" value="submit" /><br>
+      </form>
+   </div>
+</body>
+
+</html>
